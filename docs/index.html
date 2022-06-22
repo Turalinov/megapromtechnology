@@ -24,67 +24,136 @@
     <div class="wrapper">
       <div class="wrapper__content">
         <header class="header">
-  <div class="container">
 
-    <!-- logo -->
-    <div class="header__logo logo">
-      <a href="index.html" class="logo__link">
-        <img src="img/logo.png" alt="Мегапром технологии" class="logo__img" width="149" height="69">
-      </a>
+    <!-- header__top -->
+    <div class="header__top">
+      <div class="container">
+        <!-- logo -->
+        <div class="header__logo logo">
+          <a href="index.html" class="logo__link">
+            <img src="img/logo.png" alt="Мегапром технологии" class="logo__img" width="149" height="69">
+          </a>
+        </div>
+
+        <!-- symbol  -->
+        <div class="header__symbol symbol">
+          <img src="img/symbol.png" alt="10 лет" class="symbol__img" width="50" height="50">
+        </div>
+
+        <!-- region -->
+        <div class="header__region region">
+          <span class="region__title">
+            Ростов-на-Дону
+          </span>
+          <button type="button" class="region__btn">Сменить регион</button>
+        </div>
+
+        <!-- socials -->
+        <ul class="header__socials socials">
+          <li class="socials__item">
+            <a href="https://vk.com/megapromtechnologies" target="_blank" class="socials__link"
+              title="ссылка на Вконтакте">
+              <img src="img/vk.svg" alt="иконка Вконтакте" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link" target="_blank" title="ссылка на Youtube канал">
+              <img src="img/youtube.svg" alt="иконка Youtube" class="socials__icon">
+            </a>
+          </li>
+        </ul>
+
+
+        <!-- email -->
+        <div class="header_email email">
+          <a href="mailto:office@intehstroi.ru" class="email__link">office@intehstroi.ru</a>
+          <span class="email__desc">онлайн 24/7</span>
+        </div>
+
+        <!-- phone  -->
+        <div class="header__phone phone">
+          <a href="tel:+74951111111" class="phone__link">+7 (495) 111-11-11</a>
+          <button class="phone__btn">Получить обратный звонок</button>
+        </div>
+
+        <!-- toggle  -->
+        <div class="header__toggle toggle">
+          <span class="toggle__desc">Меню</span>
+          <button class="toggle__btn">
+            <span></span>
+          </button>
+        </div>
+        </div>
+        <!-- container end  -->
     </div>
+    <!-- header__top end -->
 
-    <!-- symbol  -->
-    <div class="header__symbol symbol">
-      <img src="img/symbol.png" alt="10 лет" class="symbol__img" width="50" height="50">
+
+    <!-- header__bottom -->
+    <div class="header__bottom">
+      <div class="container">
+
+        <!-- menu -->
+        <nav class="header__menu main-menu">
+          <ul>
+            <li class="current_page_item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="page_item_has_children">
+              <a href="#">О компании</a>
+              <span class="caret"></span>
+              <ul class="children">
+                <li class="">
+                  <a href="#">Общая информация</a>
+                </li>
+                <li class="">
+                  <a href="#">История</a>
+                </li>
+                <li class="">
+                  <a href="#">Нормативные документы</a>
+                </li>
+                <li class="">
+                  <a href="#">Отзывы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="page_item_has_children">
+              <a href="#">Услуги</a>
+              <span class="caret"></span>
+              <ul class="children">
+                <li class="">
+                  <a href="#">Строительство и обслуживание нефтегазовых объектов</a>
+                  <!-- для каждого создать шаблон и дать класс для иконок -->
+                </li>
+                <li class="">
+                  <a href="#">Промышленное и гражданское строительство</a>
+                </li>
+                <li class="">
+                  <a href="#">Земляные работы</a>
+                </li>
+                <li class="">
+                  <a href="#">Строительство и обслуживание автодорог</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Проекты</a>
+            </li>
+            <li>
+              <a href="#">Статьи</a>
+            </li>
+            <li class="menu__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- menu end -->
+
+      </div>
     </div>
-
-    <!-- region -->
-    <div class="header__region region">
-      <span class="region__title">
-        Ростов-на-Дону
-      </span>
-      <button type="button" class="region__btn">Сменить регион</button>
-    </div>
-
-    <!-- socials -->
-    <ul class="header__socials socials">
-      <li class="socials__item">
-        <a href="https://vk.com/megapromtechnologies" class="socials__link" title="ссылка на Вконтакте">
-          <img src="img/vk.svg" alt="иконка Вконтакте" class="socials__icon">
-        </a>
-      </li>
-      <li class="socials__item">
-        <a href="#" class="socials__link" title="ссылка на Youtube канал">
-          <img src="img/youtube.svg" alt="иконка Youtube" class="socials__icon">
-        </a>
-      </li>
-    </ul>
+    <!-- header__bottom end -->
 
 
-    <!-- email -->
-    <div class="header_email email">
-      <a href="mailto:office@intehstroi.ru" class="email__link">office@intehstroi.ru</a>
-      <span class="email__desc">онлайн 24/7</span>
-    </div>
-
-    <!-- phone  -->
-    <div class="header__phone phone">
-      <a href="tel:+74951111111" class="phone__link">+7 (495) 111-11-11</a>
-      <button class="phone__btn">Получить обратный звонок</button>
-    </div>
-
-    <!-- toggle  -->
-    <div class="header__toggle toggle">
-      <span class="toggle__desc">Меню</span>
-      <button class="toggle__btn">
-        <span></span>
-      </button>
-    </d>
-
-
-
-  </div>
-  <!-- container end  -->
 </header>
 
 
