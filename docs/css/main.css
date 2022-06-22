@@ -314,7 +314,10 @@ template {
   --clr-main: #393939;
   --clr-grey: #A0A0A0;
   --clr-grey-1: #6C6C6C;
+  --clr-grey-2: #252931;
   --clr-blue: #1273AC;
+  --clr-placeholder-search: rgba(74, 74, 74, 0.6);
+  --clr-placeholder: #8F8F8F;
 }
 
 *,
@@ -346,6 +349,28 @@ ul {
 
 ul > li {
   list-style: none;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+select {
+  outline: none;
+  width: 100%;
+  background: var(--clr-white);
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  border-radius: 3px;
+  padding: 20px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  transition: 0.3s;
+}
+input:not([type=checkbox]):not([type=radio]):focus,
+select:focus {
+  border: 1px solid var(--clr-main);
+}
+input:not([type=checkbox]):not([type=radio])::placeholder,
+select::placeholder {
+  color: var(--clr-placeholder-search);
 }
 
 h1,
@@ -2581,14 +2606,50 @@ button:focus {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .header__bottom .container {
+    margin: 0;
+    flex-direction: column;
+    align-items: initial;
+    justify-content: center;
+  }
+}
+
 .header__top {
+  padding: 20px 0;
   background: #FFFFFF;
   box-shadow: 0px 0px 74px rgba(0, 0, 0, 0.06);
+}
+@media screen and (max-width: 768px) {
+  .header__top {
+    padding: 7px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 60;
+  }
 }
 
 .header__bottom {
   background: rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 74px rgba(0, 0, 0, 0.06);
+}
+@media screen and (max-width: 768px) {
+  .header__bottom {
+    background: var(--clr-white);
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 40;
+    overflow: auto;
+    padding: 59px 20px 35px;
+    transition: 0.8s;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -2602,7 +2663,7 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1075px) {
   .header__region.region {
     display: none;
   }
@@ -2632,6 +2693,20 @@ button:focus {
 @media screen and (max-width: 768px) {
   .header__toggle.toggle {
     display: flex;
+  }
+}
+
+.header__search {
+  max-width: 290px;
+}
+@media screen and (max-width: 1075px) {
+  .header__search {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header__search {
+    display: block;
   }
 }
 
@@ -2886,9 +2961,28 @@ button:focus {
   font-size: 16px;
   color: var(--clr-white);
 }
+@media screen and (max-width: 992px) {
+  .main-menu {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-menu {
+    width: 100%;
+    font-size: 16px;
+    color: var(--clr-grey-2);
+  }
+}
 
 .main-menu > ul {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .main-menu > ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .main-menu > ul > li {
@@ -2920,12 +3014,22 @@ button:focus {
   background-position: center;
   background-size: contain;
 }
+@media screen and (max-width: 768px) {
+  .main-menu > ul > li > a ~ .caret {
+    background-image: url("../img/arrow-down--black.svg");
+  }
+}
 
 .main-menu > ul a {
   color: var(--clr-white);
   display: block;
   padding: 25px;
   text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .main-menu > ul a {
+    color: var(--clr-grey-2);
+  }
 }
 
 .main-menu li.page_item_has_children > a {
@@ -5152,6 +5256,29 @@ button:focus {
   margin-bottom: 20px;
 }
 
+.search__form {
+  position: relative;
+}
+
+.search__form input.search__input {
+  font-size: 12px;
+  padding: 15px 50px 15px 20px;
+}
+
+.search__submit {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/search-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-indent: -9999px;
+}
+
 .socials {
   display: flex;
   align-items: center;
@@ -5215,7 +5342,6 @@ button:focus {
 
 .toggle__btn {
   position: relative;
-  z-index: 30;
   width: 24px;
   height: 16px;
 }
