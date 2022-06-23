@@ -2608,10 +2608,10 @@ button:focus {
 
 @media screen and (max-width: 768px) {
   .header__bottom .container {
-    margin: 0;
     flex-direction: column;
-    align-items: initial;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
   }
 }
 
@@ -2639,7 +2639,6 @@ button:focus {
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
-    align-items: center;
     position: fixed;
     left: 0;
     right: 0;
@@ -2647,7 +2646,7 @@ button:focus {
     height: 100%;
     z-index: 40;
     overflow: auto;
-    padding: 59px 20px 35px;
+    padding: 59px 0 35px;
     transition: 0.8s;
   }
 }
@@ -2696,6 +2695,12 @@ button:focus {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .header__menu {
+    margin-bottom: 20px;
+  }
+}
+
 .header__search {
   max-width: 290px;
 }
@@ -2706,7 +2711,10 @@ button:focus {
 }
 @media screen and (max-width: 768px) {
   .header__search {
+    max-width: initial;
+    width: 100%;
     display: block;
+    margin-bottom: 20px;
   }
 }
 
@@ -2980,13 +2988,19 @@ button:focus {
 @media screen and (max-width: 768px) {
   .main-menu > ul {
     flex-direction: column;
-    justify-content: center;
+    justify-content: initial;
     align-items: center;
   }
 }
 
 .main-menu > ul > li {
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .main-menu > ul > li {
+    width: 100%;
+    text-align: center;
+  }
 }
 .main-menu > ul > li::after {
   content: "";
@@ -2997,27 +3011,37 @@ button:focus {
   height: 26px;
   border-right: 1px solid rgba(204, 204, 204, 0.1);
 }
-.main-menu > ul > li:first-child {
+@media screen and (max-width: 768px) {
+  .main-menu > ul > li::after {
+    display: none;
+  }
+}
+.main-menu > ul > li:first-child::after {
   border-right: none;
 }
 
-.main-menu > ul > li > a ~ .caret {
+.main-menu > ul > li.page_item_has_children > a::after {
+  content: "";
   display: block;
   width: 11px;
   height: 6px;
   position: absolute;
   top: 50%;
   right: 25px;
-  transform: translateY(-50%);
   background-image: url("../img/arrow-down--white.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition: 0.3s;
 }
 @media screen and (max-width: 768px) {
-  .main-menu > ul > li > a ~ .caret {
+  .main-menu > ul > li.page_item_has_children > a::after {
     background-image: url("../img/arrow-down--black.svg");
   }
+}
+
+.main-menu > ul > li.page_item_has_children.active > a::after {
+  transform: rotate(180deg);
 }
 
 .main-menu > ul a {
@@ -3025,15 +3049,24 @@ button:focus {
   display: block;
   padding: 25px;
   text-decoration: none;
+  transition: 0.3s;
 }
 @media screen and (max-width: 768px) {
   .main-menu > ul a {
     color: var(--clr-grey-2);
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+    padding: 15px;
   }
 }
 
 .main-menu li.page_item_has_children > a {
   padding-right: 45px;
+}
+@media screen and (max-width: 768px) {
+  .main-menu li.page_item_has_children > a {
+    position: relative;
+    padding-right: 15px;
+  }
 }
 
 .main-menu ul ul {
@@ -3045,6 +3078,14 @@ button:focus {
   white-space: nowrap;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .main-menu ul ul {
+    font-size: 14px;
+    white-space: initial;
+    position: initial;
+    z-index: initial;
+  }
 }
 
 .main-menu ul ul ul {
@@ -3060,11 +3101,40 @@ button:focus {
   color: #444;
   padding: 15px 25px;
 }
+@media screen and (max-width: 768px) {
+  .main-menu ul ul a {
+    padding: 7px 25px;
+    box-shadow: initial;
+    position: relative;
+  }
+  .main-menu ul ul a::after {
+    content: "";
+    position: absolute;
+    width: 66px;
+    height: 1px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(222, 222, 222, 0.5);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-menu ul ul li:last-child a:last-child::after {
+    display: none;
+  }
+}
 
 .main-menu > ul > li:hover > a,
 .main-menu > ul > li > a:focus {
   background: var(--clr-main);
   box-shadow: 0px 0px 74px rgba(0, 0, 0, 0.06);
+}
+@media screen and (max-width: 768px) {
+  .main-menu > ul > li:hover > a,
+.main-menu > ul > li > a:focus {
+    background: rgba(127, 127, 127, 0.1);
+  }
 }
 
 .main-menu > ul ul > li:hover > a,
@@ -5263,6 +5333,11 @@ button:focus {
 .search__form input.search__input {
   font-size: 12px;
   padding: 15px 50px 15px 20px;
+}
+@media screen and (max-width: 768px) {
+  .search__form input.search__input {
+    border-color: #B7B7B7;
+  }
 }
 
 .search__submit {
