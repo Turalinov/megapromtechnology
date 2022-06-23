@@ -2642,13 +2642,17 @@ button:focus {
     position: fixed;
     left: 0;
     right: 0;
-    top: 0;
+    top: -150%;
     height: 100%;
     z-index: 40;
     overflow: auto;
     padding: 59px 0 35px;
     transition: 0.8s;
   }
+}
+
+.header__bottom.open {
+  top: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -3078,6 +3082,9 @@ button:focus {
   white-space: nowrap;
   font-family: "Inter", sans-serif;
   font-weight: 400;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
 }
 @media screen and (max-width: 768px) {
   .main-menu ul ul {
@@ -3142,8 +3149,10 @@ button:focus {
   background: rgba(127, 127, 127, 0.1);
 }
 
-.main-menu ul li:hover > ul {
+.main-menu ul li > ul.active {
   display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
 .application {
@@ -5407,6 +5416,18 @@ button:focus {
 .toggle {
   display: flex;
   justify-content: space-between;
+}
+
+.toggle.active .toggle__btn span {
+  display: none;
+}
+.toggle.active .toggle__btn::before {
+  top: 8px;
+  transform: rotate(45deg);
+}
+.toggle.active .toggle__btn::after {
+  top: 8px;
+  transform: rotate(-45deg);
 }
 
 .toggle__desc {
