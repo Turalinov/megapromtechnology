@@ -394,8 +394,18 @@ h1 {
 }
 h2 {
   font-size: 50px;
-  letter-spacing: 2px;
 }
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 22px;
+  }
+}
+
 h3 {
   font-size: 30px;
 }
@@ -1175,6 +1185,16 @@ img {
   font-size: 28px;
   padding-left: 25px;
 }
+@media screen and (max-width: 992px) {
+  .bullits {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bullits {
+    font-size: 16px;
+  }
+}
 
 .bullits__item {
   list-style: disc;
@@ -1195,7 +1215,7 @@ button:focus {
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
-  font-size: 15px;
+  font-size: 18px;
   border: 1px solid transparent;
   border-radius: 3px;
   padding: 17px 55px;
@@ -1203,6 +1223,11 @@ button:focus {
   background: linear-gradient(83.85deg, #ED7F1B 28.21%, #F59C4B 45.83%, #ED7F1B 70.49%);
   cursor: pointer;
   transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 15px;
+  }
 }
 .cabinet {
   padding: 115px 0 50px;
@@ -4001,6 +4026,11 @@ button:focus {
   width: 100vw;
   position: relative;
 }
+@media screen and (max-width: 992px) {
+  .hero__slider {
+    height: 720px;
+  }
+}
 
 .hero__item {
   background-repeat: no-repeat;
@@ -4012,10 +4042,39 @@ button:focus {
 
 .hero__title {
   margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+  .hero__title {
+    letter-spacing: initial;
+    margin-bottom: 10px;
+  }
 }
 
 .hero__bullits {
   margin-bottom: 45px;
+  min-height: 189px;
+}
+@media screen and (max-width: 992px) {
+  .hero__bullits {
+    min-height: initial;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__bullits {
+    margin-bottom: 50px;
+  }
+}
+
+.hero__bottom {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .hero__bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .hero__symbol-date {
@@ -4024,6 +4083,20 @@ button:focus {
   right: 16%;
   z-index: 10;
 }
+@media screen and (max-width: 992px) {
+  .hero__symbol-date {
+    width: 100px;
+    bottom: initial;
+    top: 240px;
+    right: 5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__symbol-date {
+    width: 54px;
+    top: 160px;
+  }
+}
 
 .hero__btn {
   text-decoration: none;
@@ -4031,6 +4104,16 @@ button:focus {
   padding: 30px 55px 30px 75px;
   position: relative;
   margin-right: 60px;
+}
+@media screen and (max-width: 768px) {
+  .hero__btn {
+    box-sizing: border-box;
+    padding: 18px 30px 18px 50px;
+    max-width: 260px;
+    width: 100%;
+    margin-right: initial;
+    margin-bottom: 10px;
+  }
 }
 .hero__btn::before {
   content: "";
@@ -4047,6 +4130,11 @@ button:focus {
   background-size: contain;
   transition: 0.3s;
 }
+@media screen and (max-width: 768px) {
+  .hero__btn::before {
+    left: 32px;
+  }
+}
 
 .hero__link {
   color: var(--clr-white);
@@ -4054,6 +4142,12 @@ button:focus {
   padding-left: 32px;
   position: relative;
   font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .hero__link {
+    padding-left: 22px;
+    font-size: 16px;
+  }
 }
 .hero__link::before {
   content: "";
@@ -4070,6 +4164,12 @@ button:focus {
   background-size: contain;
   transition: 0.3s;
 }
+@media screen and (max-width: 768px) {
+  .hero__link::before {
+    width: 12px;
+    height: 17px;
+  }
+}
 
 .hero__pagination.swiper-pagination {
   bottom: 60px;
@@ -4081,6 +4181,12 @@ button:focus {
   height: 5px;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 40px;
+}
+@media screen and (max-width: 768px) {
+  .hero__pagination.swiper-pagination .swiper-pagination-bullet {
+    width: 15px;
+    height: 3px;
+  }
 }
 
 .neuf {
