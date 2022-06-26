@@ -15,6 +15,11 @@
 
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
   <title>Le Blog NEUF24 - Articles et actualités de l’immobilier neuf</title>
 </head>
 
@@ -1275,8 +1280,7 @@
 
 
 </div>
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/app.min.js"></script>
+
 
 
 <div class="container">
@@ -1291,7 +1295,38 @@
   <!-- ellipse end -->
 </div>
 
-
+<script>
+  TweenMax.to(".excavator-body", 0.1, {
+    y: "+=1",
+    yoyo: true,
+    repeat: -1
+  });
+  TweenMax.to(".excavator-body", 0.1, {
+    y: "-=1",
+    yoyo: true,
+    repeat: -1
+  });
+  TweenMax.to(".excavator-road", 0, {
+    x: 145
+  });
+  TweenMax.to(".excavator-road", 3, {
+    x: -145,
+    repeat: -1
+  });
+  TweenMax.to(".excavator-hook", 0, {
+    rotation: -10,
+    transformOrigin: "50% 0%"
+  });
+  TweenMax.to(".excavator-hook", 1, {
+    rotation: 10,
+    transformOrigin: "50% 0%",
+    repeat: -1,
+    yoyo: true,
+    ease: Sine.easeInOut
+  });
+</script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/app.min.js"></script>
 </body>
 
 

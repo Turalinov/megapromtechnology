@@ -3069,6 +3069,40 @@ button:focus {
   }
 }
 
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+}
+
+.loader.close {
+  display: none;
+}
+
+.loader_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ebf4fd;
+}
+
+.loader_inner svg {
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+}
+.loader_inner svg path {
+  fill: #1273AC;
+}
+
 .logo {
   width: 149px;
   height: 69px;
