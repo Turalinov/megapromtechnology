@@ -436,8 +436,12 @@ h3 {
   }
 }
 
-h3 {
+h4 {
   font-size: 30px;
+}
+
+h5 {
+  font-size: 16px;
 }
 .section {
   padding: 100px 0;
@@ -475,9 +479,6 @@ h3 {
   }
 }
 
-h5 {
-  font-size: 16px;
-}
 p {
   margin: 0;
 }
@@ -3706,9 +3707,23 @@ button:focus {
   }
 }
 
+.calculation {
+  overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .calculation {
+    position: relative;
+  }
+}
+
 .calculation > .container {
   display: flex;
   justify-content: flex-end;
+}
+@media screen and (max-width: 992px) {
+  .calculation > .container {
+    position: static;
+  }
 }
 .calculation > .container::after {
   content: "";
@@ -3719,16 +3734,27 @@ button:focus {
   height: 100%;
   background-image: url("../img/specialist-bg.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   z-index: 1;
+}
+@media screen and (max-width: 1075px) {
+  .calculation > .container::after {
+    left: 0;
+    background-size: cover;
+  }
 }
 
 .calculation__content {
   padding: 60px 0;
   position: relative;
   z-index: 2;
-  transform: translateX(-210px);
+  transform: translateX(-140px);
   color: var(--clr-white);
+}
+@media screen and (max-width: 1075px) {
+  .calculation__content {
+    transform: translateX(-70px);
+  }
 }
 
 .calculation__img {
@@ -3736,15 +3762,49 @@ button:focus {
   position: absolute;
   left: -70px;
   bottom: 0px;
-  width: 658px;
-  height: 744px;
+  width: 608px;
+  height: 694px;
   z-index: 2;
   filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.08));
 }
+@media screen and (max-width: 992px) {
+  .calculation__img {
+    width: 558px;
+    height: 644px;
+  }
+}
 
 .calculation__text {
+  font-size: 18px;
+  position: absolute;
+  color: var(--clr-white);
+  z-index: 2;
+  left: 270px;
+  bottom: 130px;
+  text-align: center;
+  pointer-events: none;
+}
+.calculation__text::before {
+  content: "";
   position: absolute;
   left: 0;
+  top: -45px;
+  width: 254px;
+  height: 162px;
+  background: rgba(0, 0, 0, 0.3);
+  filter: blur(60px);
+  z-index: -1;
+}
+.calculation__text::after {
+  content: "";
+  position: absolute;
+  width: 125.46px;
+  height: 36.24px;
+  left: 160px;
+  top: 55px;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .calculation__form.form {
