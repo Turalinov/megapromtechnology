@@ -318,6 +318,8 @@ template {
   --clr-grey-1: #6C6C6C;
   --clr-grey-2: #252931;
   --clr-blue: #1273AC;
+  --clr-blue2: #69B7E6;
+  --clr-orange: #ED7F1B;
   --clr-placeholder-search: rgba(74, 74, 74, 0.6);
   --clr-placeholder: #8F8F8F;
 }
@@ -380,6 +382,17 @@ select::placeholder {
   color: var(--clr-placeholder-search);
 }
 
+input[type=file] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 h1,
 h2,
 h3,
@@ -423,6 +436,9 @@ h3 {
   }
 }
 
+h3 {
+  font-size: 30px;
+}
 .section {
   padding: 100px 0;
 }
@@ -1268,11 +1284,19 @@ button:focus {
   background: linear-gradient(83.85deg, #ED7F1B 28.21%, #F59C4B 45.83%, #ED7F1B 70.49%);
   cursor: pointer;
   transition: 0.3s;
+  filter: drop-shadow(0px 0px 34px rgba(0, 0, 0, 0.06));
 }
 @media screen and (max-width: 768px) {
   .btn {
     font-size: 15px;
   }
+}
+.btn--bordered {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  border-color: var(--clr-orange);
+  background: none;
+  background-color: transparent;
 }
 .cabinet {
   padding: 115px 0 50px;
@@ -2808,6 +2832,50 @@ button:focus {
   color: var(--clr-white);
 }
 
+.form {
+  text-align: center;
+}
+
+.form__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-bottom: 31px;
+}
+
+.form__title span {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.form__elem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 417px;
+}
+
+.form__row + .form__row {
+  margin-top: 10px;
+}
+
+.form__input {
+  position: relative;
+  cursor: pointer;
+}
+
+.form__politics {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  color: var(--clr-white);
+}
+
+.form__politics-link {
+  color: var(--clr-blue2);
+  text-decoration: none;
+}
+
 .header-cabinet {
   position: fixed;
   left: 0;
@@ -3636,6 +3704,52 @@ button:focus {
   .application__desc {
     margin-bottom: 25px;
   }
+}
+
+.calculation > .container {
+  display: flex;
+  justify-content: flex-end;
+}
+.calculation > .container::after {
+  content: "";
+  position: absolute;
+  left: -100px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/specialist-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+}
+
+.calculation__content {
+  padding: 60px 0;
+  position: relative;
+  z-index: 2;
+  transform: translateX(-210px);
+  color: var(--clr-white);
+}
+
+.calculation__img {
+  pointer-events: none;
+  position: absolute;
+  left: -70px;
+  bottom: 0px;
+  width: 658px;
+  height: 744px;
+  z-index: 2;
+  filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.08));
+}
+
+.calculation__text {
+  position: absolute;
+  left: 0;
+}
+
+.calculation__form.form {
+  box-sizing: border-box;
+  max-width: 639px;
 }
 
 .estate {

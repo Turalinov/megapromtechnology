@@ -498,7 +498,8 @@
     <!-- calculation content -->
     <div class="calculation__content">
       <div class="calculation__form form">
-        <h4 class="form__title">Заполните форму и мы свяжемся с вами для бесплатного расчета сметы проекта</h4>
+        <h4 class="form__title">Заполните форму и мы свяжемся с вами<br>для <span>бесплатного расчета сметы</span>
+          проекта</h4>
         <form action="#" class="form__elem">
           <div class="form__row">
             <input type="text" class="form__input" name="name" placeholder="Ваше имя">
@@ -510,16 +511,19 @@
             <input type="text" class="form__input" name="comment" placeholder="Комментарий">
           </div>
           <div class="form__row">
-            <div class="form__file">
+            <label class="form__file btn btn--bordered">
               <input type="file" name="file">Прикрепить файл
-            </div>
+            </label>
           </div>
           <div class="form__row">
             <button type="submit" class="btn form__btn">Заказать звонок</button>
           </div>
           <div class="form__row">
-            Нажимая на кнопку вы соглашаетесь с <a href="#" class="form__politics">условиями обработки данных и
-              политикой конфиденциальности</a>
+            <div class="form__politics">
+              Нажимая на кнопку вы соглашаетесь с <a href="#" class="form__politics-link">условиями
+                обработки данных и
+                политикой конфиденциальности</a>
+            </div>
           </div>
 
         </form>
