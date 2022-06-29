@@ -1258,6 +1258,48 @@ img {
   color: var(--clr-white);
 }
 
+.buklet-link {
+  color: var(--clr-white);
+  text-decoration: none;
+  padding-left: 32px;
+  position: relative;
+  font-size: 18px;
+}
+@media screen and (max-width: 768px) {
+  .buklet-link {
+    padding-left: 22px;
+    font-size: 16px;
+  }
+}
+.buklet-link::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-image: url("../img/buklet.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: 0.3s;
+}
+@media screen and (max-width: 768px) {
+  .buklet-link::before {
+    width: 12px;
+    height: 17px;
+  }
+}
+
+.buklet-link--black {
+  color: var(--clr-main);
+}
+.buklet-link--black::before {
+  background-image: url("../img/buklet-black.svg");
+}
+
 .bullits {
   font-size: 28px;
   padding-left: 25px;
@@ -1297,6 +1339,7 @@ button:focus {
   border: 1px solid transparent;
   border-radius: 3px;
   padding: 17px 55px;
+  text-decoration: none;
   color: var(--clr-white);
   background: linear-gradient(83.85deg, #ED7F1B 28.21%, #F59C4B 45.83%, #ED7F1B 70.49%);
   cursor: pointer;
@@ -4572,41 +4615,6 @@ button:focus {
 @media screen and (max-width: 768px) {
   .hero__btn::before {
     left: 32px;
-  }
-}
-
-.hero__link {
-  color: var(--clr-white);
-  text-decoration: none;
-  padding-left: 32px;
-  position: relative;
-  font-size: 18px;
-}
-@media screen and (max-width: 768px) {
-  .hero__link {
-    padding-left: 22px;
-    font-size: 16px;
-  }
-}
-.hero__link::before {
-  content: "";
-  display: block;
-  width: 14px;
-  height: 20px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  background-image: url("../img/buklet.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition: 0.3s;
-}
-@media screen and (max-width: 768px) {
-  .hero__link::before {
-    width: 12px;
-    height: 17px;
   }
 }
 
