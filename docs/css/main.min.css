@@ -348,6 +348,12 @@ body {
   color: var(--clr-main);
   background-color: var(--clr-white);
 }
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
 body.body--locked {
   overflow: hidden;
 }
@@ -1351,6 +1357,8 @@ button:focus {
 @media screen and (max-width: 768px) {
   .btn {
     font-size: 15px;
+    padding: 17px 25px;
+    width: 100%;
   }
 }
 .btn--bordered {
@@ -3914,17 +3922,42 @@ button:focus {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 768px) {
+  .company__content {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+}
+
 .company__info,
 .company__img {
   flex: 1 1 50%;
+}
+@media screen and (max-width: 768px) {
+  .company__info,
+.company__img {
+    flex: initial;
+  }
 }
 
 .company__info {
   margin-right: 70px;
 }
+@media screen and (max-width: 768px) {
+  .company__info {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
 
 .company__title {
   margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .company__title {
+    text-align: center;
+    margin-bottom: 25px;
+  }
 }
 
 .company__img-elem {
@@ -3947,15 +3980,37 @@ button:focus {
     margin-bottom: 30px;
   }
 }
+@media screen and (max-width: 768px) {
+  .company__results.results {
+    margin-bottom: 20px;
+  }
+}
 
 .copmany__btns {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .copmany__btns {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.company__btn,
+.company__link {
+  max-width: 290px;
+}
 
 .company__btn {
   margin-right: 70px;
+}
+@media screen and (max-width: 768px) {
+  .company__btn {
+    margin-bottom: 13px;
+    margin-right: 0;
+  }
 }
 
 .estate {
@@ -6156,6 +6211,13 @@ button:focus {
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .results {
+    flex-direction: column;
+    justify-content: initial;
+    align-items: initial;
+  }
+}
 
 .results__item + .results__item {
   margin-left: 30px;
@@ -6163,6 +6225,12 @@ button:focus {
 @media screen and (max-width: 992px) {
   .results__item + .results__item {
     margin-left: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .results__item + .results__item {
+    margin-top: 10px;
+    margin-left: 0;
   }
 }
 
@@ -6176,6 +6244,11 @@ button:focus {
 @media screen and (max-width: 992px) {
   .results__item {
     padding: 15px 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .results__item {
+    padding: 10px 60px;
   }
 }
 
