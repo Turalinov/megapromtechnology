@@ -314,6 +314,7 @@ template {
   --clr-white: #ffffff;
   --clr-white-1: #E5E5E5;
   --clr-main: #393939;
+  --clr-black: #1A1A1A;
   --clr-grey: #A0A0A0;
   --clr-grey-1: #6C6C6C;
   --clr-grey-2: #252931;
@@ -460,11 +461,11 @@ h5 {
   font-size: 16px;
 }
 .section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 @media screen and (max-width: 992px) {
   .section {
-    padding: 80px 0;
+    padding: 40px 0;
   }
 }
 .title {
@@ -497,6 +498,7 @@ h5 {
 
 p {
   margin: 0;
+  text-align: justify;
 }
 
 img {
@@ -3903,6 +3905,59 @@ button:focus {
   }
 }
 
+.company__content {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  .company__content {
+    margin-bottom: 20px;
+  }
+}
+.company__info,
+.company__img {
+  flex: 1 1 50%;
+}
+
+.company__info {
+  margin-right: 70px;
+}
+
+.company__title {
+  margin-bottom: 40px;
+}
+
+.company__img-elem {
+  object-fit: cover;
+  width: 100%;
+}
+
+.company__results.results {
+  margin-top: -70px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .company__results.results {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .company__results.results {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.copmany__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company__btn {
+  margin-right: 70px;
+}
+
 .estate {
   padding: 188px 0px 75px;
 }
@@ -4501,6 +4556,7 @@ button:focus {
 }
 
 .hero {
+  padding-top: 0;
   margin-top: -74px;
 }
 
@@ -6092,6 +6148,49 @@ button:focus {
   color: var(--clr-grey);
   text-decoration: underline;
   font-size: 16px;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.results__item + .results__item {
+  margin-left: 30px;
+}
+@media screen and (max-width: 992px) {
+  .results__item + .results__item {
+    margin-left: 15px;
+  }
+}
+
+.results__item {
+  padding: 20px 70px;
+  background: var(--clr-white);
+  box-shadow: 0px 0px 54px rgba(0, 0, 0, 0.12);
+  border-radius: 3px;
+  color: var(--clr-black);
+}
+@media screen and (max-width: 992px) {
+  .results__item {
+    padding: 15px 30px;
+  }
+}
+
+.results__item > span {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  display: block;
+  color: var(--clr-blue);
+  font-size: 60px;
+  line-height: 73px;
+}
+@media screen and (max-width: 992px) {
+  .results__item > span {
+    font-size: 50px;
+  }
 }
 
 .reviews {
