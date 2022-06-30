@@ -3998,9 +3998,11 @@ button:focus {
   }
 }
 
-.company__btn,
+@media screen and (max-width: 768px) {
+  .company__btn,
 .company__link {
-  max-width: 290px;
+    max-width: 290px;
+  }
 }
 
 .company__btn {
@@ -4999,29 +5001,43 @@ button:focus {
   background-image: url("../img/op9.svg");
 }
 
-.partners {
-  padding: 45px 0;
-  background-color: var(--clr-white);
-}
-@media screen and (max-width: 768px) {
-  .partners {
-    padding: 25px 0;
-  }
+.container {
+  position: relative;
 }
 
-.partners__slider.swiper {
-  overflow: initial;
+.partners__title {
+  margin-bottom: 40px;
 }
 
 .partners__item.swiper-slide {
-  width: 200px;
-  height: 50px;
+  width: 270px;
+  height: 100px;
 }
-@media screen and (max-width: 768px) {
-  .partners__item.swiper-slide {
-    width: 112px;
-    height: 28px;
-  }
+.partners__btns {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+}
+
+.partners__btn {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #B8B8B8;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.partners__btn + .partners__btn {
+  margin-left: 24px;
+}
+
+.partners__btn-prev {
+  background-image: url("../img/arrow-left-partner.svg");
+}
+
+.partners__btn-next {
+  background-image: url("../img/arrow-right-partner.svg");
 }
 
 .projects .container {
