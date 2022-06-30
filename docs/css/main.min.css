@@ -2962,6 +2962,111 @@ button:focus {
   text-decoration: none;
 }
 
+.geography__title {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+  .geography__title {
+    margin-bottom: 25px;
+  }
+}
+
+.geography__map {
+  width: 1170px;
+  height: 637px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .geography__map {
+    margin-bottom: 10px;
+  }
+}
+
+.geography__map-img {
+  width: 100%;
+}
+.geography__legend {
+  margin-top: -100px;
+  margin-bottom: 45px;
+  margin-left: 37px;
+}
+@media screen and (max-width: 768px) {
+  .geography__legend {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.geography__legend__item {
+  padding-left: 35px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .geography__legend__item {
+    padding-left: 26px;
+  }
+}
+.geography__legend__item::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .geography__legend__item::after {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.geography__legend__item + .geography__legend__item {
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .geography__legend__item + .geography__legend__item {
+    margin-top: 5px;
+  }
+}
+
+.geography__legend__item--branch::after {
+  background-image: url("../img/icon-branch.svg");
+}
+
+.geography__legend__item--project::after {
+  background-image: url("../img/icon-project.svg");
+}
+
+.geograhy__links {
+  display: flex;
+  justify-content: center;
+}
+
+.geography__elem {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  left: 0;
+  top: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.geography__elem.geography__elem--branch {
+  background-image: url("../img/icon-branch.svg");
+}
+
+.geography__elem.geography__elem--project {
+  background-image: url("../img/icon-project.svg");
+}
+
 .header-cabinet {
   position: fixed;
   left: 0;
@@ -5037,6 +5142,7 @@ button:focus {
 }
 
 .partners__btn {
+  cursor: pointer;
   width: 48px;
   height: 48px;
   border: 2px solid #B8B8B8;

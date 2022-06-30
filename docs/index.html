@@ -19,7 +19,16 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
     integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"
+      integrity="sha256-xH4q8N0pEzrZMaRmd7gQVcTZiFei+HfRTBPJ1OGXC0k=" crossorigin="anonymous"></script>
 
+      <script>
+        $(document).ready(function(){
+          $(".draggable").draggable({ containment:'' });
+        });
+      </script>
 
   <title>Главная</title>
 </head>
@@ -664,11 +673,75 @@
 
 
       <!-- филиал -->
-      <div class="geography__elem geography__elem--branch"></div>
+      <div class="geography__elem geography__elem--branch geography__elem-1  "
+        style="left: 477px; top: 230px;"></div>
+      <div class="geography__elem geography__elem--branch geography__elem-2  "
+        style="left: 402px; top: 362px;"></div>
+      <div class="geography__elem geography__elem--branch geography__elem-3  "
+        style="left: 414px; top: 268px;"></div>
+      <div class="geography__elem geography__elem--branch geography__elem-4  "
+        style="left: 9px; top: 302px;"></div>
+      <div class="geography__elem geography__elem--branch geography__elem-5  "
+        style="left: 156px; top: 90px;"></div>
+      <div class="geography__elem geography__elem--branch geography__elem-6  "
+        style="left: 128px; top: 85px;"></div>
       <!-- филиал end -->
 
       <!-- филиал -->
-      <div class="geography__elem geography__elem--project"></div>
+      <div class="geography__elem geography__elem--project geography__elem-7  "
+        style="left: 129px; top: 95px;"></div>
+      <div class="geography__elem geography__elem--project geography__elem-8  "
+        style="left: 148px; top: 87px;"></div>
+      <div class="geography__elem geography__elem--project geography__elem-9  "
+        style="left: 172px; top: 144px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-10  "
+        style="left: 185px; top: 151px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-11  "
+        style="left: 202px; top: 98px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-12  "
+        style="left: 158px; top: 210px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-13  "
+        style="left: 246px; top: 188px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-14  "
+        style="left: 240px; top: 321px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-15  "
+        style="left: 251px; top: 310px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-16  "
+        style="left: 380px; top: 321px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-17  "
+        style="left: 403px; top: 273px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-18  "
+        style="left: 407px; top: 199px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-19  "
+        style="left: 420px; top: 214px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-20  "
+        style="left: 454px; top: 216px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-21  "
+        style="left: 463px; top: 230px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-22  "
+        style="left: 471px; top: 217px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-23  "
+        style="left: 448px; top: 296px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-24  "
+        style="left: 466px; top: 307px;"></div>
+      <div
+        class="geography__elem geography__elem--project geography__elem-25  "
+        style="left: 490px; top: 221px;"></div>
       <!-- филиал end -->
 
 
@@ -680,17 +753,19 @@
 
     <!-- legend -->
     <div class="geography__legend">
-      <div class="geography__legend__item geography__legend__item--branch">
+      <div class="geography__legend__item geography__legend__item--project">
         Проекты на карте
       </div>
-      <div class="geography__legend__item geography__legend__item--project">
+      <div class="geography__legend__item geography__legend__item--branch">
         Филиалы компании
       </div>
     </div>
     <!-- legend end   -->
 
     <!-- link -->
-    <a href="#" class="btn geograhy__link">посмотреть Все проекты</a>
+    <div class="geograhy__links">
+      <a href="#" class="btn geograhy__link">посмотреть Все проекты</a>
+    </div>
     <!-- link end -->
 
   </div>
