@@ -481,6 +481,7 @@ h5 {
 @media screen and (max-width: 768px) {
   .title {
     padding-left: initial;
+    text-align: center;
   }
 }
 .title::after {
@@ -5008,6 +5009,15 @@ button:focus {
 .partners__title {
   margin-bottom: 40px;
 }
+@media screen and (max-width: 768px) {
+  .partners__title {
+    margin-bottom: 35px;
+  }
+}
+
+.partners__slider.swiper {
+  margin-bottom: 28px;
+}
 
 .partners__item.swiper-slide {
   width: 270px;
@@ -5018,6 +5028,12 @@ button:focus {
   display: flex;
   top: 0;
   right: 0;
+}
+@media screen and (max-width: 768px) {
+  .partners__btns {
+    position: static;
+    justify-content: center;
+  }
 }
 
 .partners__btn {
