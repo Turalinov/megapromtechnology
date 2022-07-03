@@ -1233,10 +1233,17 @@ img {
   font-size: 16px;
   min-width: 300px;
 }
+@media screen and (max-width: 768px) {
+  .branch {
+    font-size: 14px;
+    padding: 15px;
+    min-width: 200px;
+  }
+}
 .branch::after {
   content: "";
   position: absolute;
-  bottom: -32.2px;
+  bottom: -31px;
   left: 50%;
   transform: translateX(-50%);
   border: 16px solid transparent;
@@ -1244,9 +1251,21 @@ img {
   box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.14);
   backdrop-filter: blur(6px);
 }
+@media screen and (max-width: 768px) {
+  .branch::after {
+    bottom: -24px;
+    border: 13px solid transparent;
+    border-top: 13px solid rgba(255, 255, 255, 0.9);
+  }
+}
 
 .branch__title {
   margin-bottom: 32px;
+}
+@media screen and (max-width: 768px) {
+  .branch__title {
+    margin-bottom: 15px;
+  }
 }
 
 .brahch__img {
@@ -1254,6 +1273,12 @@ img {
   height: 104px;
   position: relative;
   margin-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  .brahch__img {
+    width: 73px;
+    height: 84px;
+  }
 }
 .brahch__img::after {
   content: "";
@@ -1264,11 +1289,22 @@ img {
   width: 126px;
   height: 58px;
   background-image: url("../img/logo-mini.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (max-width: 768px) {
+  .brahch__img::after {
+    left: 83px;
+    transform: translateY(-50%);
+    width: 96px;
+    height: 28px;
+  }
 }
 
 .brahch__img-elem {
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .branch__btn {
@@ -1428,6 +1464,11 @@ button:focus {
   background: linear-gradient(83.85deg, #1E84C0 28.21%, #3298D5 45.83%, #218AC8 70.49%);
   padding: 13px 32px;
   font-size: 14px;
+}
+@media screen and (max-width: 768px) {
+  .btn--blue {
+    font-size: 12px;
+  }
 }
 
 .cabinet {
@@ -3414,31 +3455,48 @@ button:focus {
 }
 
 .geography__branch {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  .geography__branch {
+    left: 50% !important;
+    transform: translate(-50%) !important;
+    top: -205px !important;
+  }
+}
+
+.geography__branch-1 {
+  left: 34px;
+  top: -195px;
+}
 
 .geography__branch-2 {
-  left: 300px;
+  left: 286px;
+  top: -18px;
 }
 
 .geography__branch-3 {
-  left: 600px;
+  left: 349px;
+  top: -68px;
 }
 
 .geography__branch-4 {
-  left: 900px;
+  left: 274px;
+  top: 62px;
 }
 
 .geography__branch-5 {
-  top: 300px;
+  left: -117px;
+  top: -5px;
 }
 
 .geography__branch-6 {
-  top: 300px;
-  left: 300px;
+  left: 0px;
+  top: -220px;
 }
 
 .header-cabinet {
