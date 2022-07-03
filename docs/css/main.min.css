@@ -1222,6 +1222,60 @@ img {
   color: #60BBC8;
 }
 
+.branch {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(6px);
+  border-radius: 3px;
+  padding: 28px 28px 20px 20px;
+  font-size: 16px;
+  min-width: 300px;
+}
+.branch::after {
+  content: "";
+  position: absolute;
+  bottom: -32.2px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 16px solid transparent;
+  border-top: 16px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.14);
+  backdrop-filter: blur(6px);
+}
+
+.branch__title {
+  margin-bottom: 32px;
+}
+
+.brahch__img {
+  width: 83px;
+  height: 104px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.brahch__img::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 103px;
+  transform: translateY(-50%);
+  width: 126px;
+  height: 58px;
+  background-image: url("../img/logo-mini.png");
+}
+
+.brahch__img-elem {
+  width: 100%;
+  object-fit: cover;
+}
+
+.branch__btn {
+  max-width: 166px;
+  margin: 0 auto;
+}
+
 .breadcrumbs {
   font-size: 14px;
   margin-top: -10px;
@@ -1370,6 +1424,12 @@ button:focus {
   background: none;
   background-color: transparent;
 }
+.btn--blue {
+  background: linear-gradient(83.85deg, #1E84C0 28.21%, #3298D5 45.83%, #218AC8 70.49%);
+  padding: 13px 32px;
+  font-size: 14px;
+}
+
 .cabinet {
   padding: 115px 0 50px;
 }
@@ -3351,6 +3411,34 @@ button:focus {
     left: 134px;
     top: 58px;
   }
+}
+
+.geography__branch {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.geography__branch-2 {
+  left: 300px;
+}
+
+.geography__branch-3 {
+  left: 600px;
+}
+
+.geography__branch-4 {
+  left: 900px;
+}
+
+.geography__branch-5 {
+  top: 300px;
+}
+
+.geography__branch-6 {
+  top: 300px;
+  left: 300px;
 }
 
 .header-cabinet {
