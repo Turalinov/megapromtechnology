@@ -2738,15 +2738,9 @@ button:focus {
 
 .footer__row.footer__row-2 {
   align-items: flex-start;
-  margin-bottom: 10px;
 }
 
 .footer__row.footer__row-3 {
-  justify-content: flex-start;
-  margin-bottom: 15px;
-}
-
-.footer__row.footer__row-4 {
   justify-content: flex-start;
 }
 
@@ -2766,7 +2760,7 @@ button:focus {
 
 .footer__col {
   flex: 1;
-  max-width: 241px;
+  max-width: 260px;
 }
 
 .footer__subtitle {
@@ -2798,7 +2792,9 @@ button:focus {
 }
 
 .footer__btn.btn {
-  margin-right: 40px;
+  padding: 18px 46px;
+  font-size: 15px;
+  width: 100%;
 }
 
 .footer__politics-link {
@@ -2806,6 +2802,14 @@ button:focus {
   color: var(--clr-black);
   opacity: 0.6;
   font-size: 15px;
+}
+
+.footer-menu-1 {
+  margin-bottom: 15px;
+}
+
+.footer-menu-2 {
+  margin-bottom: 30px;
 }
 
 .form {
