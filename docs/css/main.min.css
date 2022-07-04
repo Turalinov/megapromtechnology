@@ -2952,6 +2952,15 @@ button:focus {
   }
 }
 
+.form__block {
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.form__block + .form__block {
+  margin-left: 15px;
+}
+
 .form__input {
   position: relative;
   cursor: pointer;
@@ -4678,6 +4687,56 @@ button:focus {
     margin-bottom: 13px;
     margin-right: 0;
   }
+}
+
+.section.demand {
+  background-image: url("../img/demand-bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 533px;
+  position: relative;
+  z-index: 1;
+  padding: 90px 0;
+}
+
+.demand__form.form {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 3px;
+  padding: 35px 50px 30px;
+}
+
+.demand__form .form__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.demand__form .form__desc {
+  max-width: 725px;
+  margin: 0 auto 30px;
+}
+
+.demand__form .form__elem {
+  max-width: initial;
+}
+
+.demand__form .form__row {
+  align-items: center;
+}
+
+.demand__form .form__row:first-child {
+  display: flex;
+}
+
+.demand__form .form__row:last-child {
+  margin-top: 20px;
+}
+
+.demand__form .form__politics {
+  color: var(--clr-grey);
+  max-width: 520px;
+  margin: 0 auto;
 }
 
 .estate {
@@ -7196,7 +7255,6 @@ button:focus {
 
 .ticket--project {
   left: -20%;
-  display: flex;
   padding: 15px;
 }
 
