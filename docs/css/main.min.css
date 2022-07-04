@@ -2960,6 +2960,12 @@ button:focus {
 .form__block + .form__block {
   margin-left: 15px;
 }
+@media screen and (max-width: 768px) {
+  .form__block + .form__block {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
 
 .form__input {
   position: relative;
@@ -4699,11 +4705,28 @@ button:focus {
   z-index: 1;
   padding: 90px 0;
 }
+@media screen and (max-width: 992px) {
+  .section.demand {
+    min-height: initial;
+  }
+}
+@media screen and (max-width: 768px) {
+  .section.demand {
+    padding: 40px 0;
+  }
+}
 
 .demand__form.form {
   background: rgba(255, 255, 255, 0.92);
   border-radius: 3px;
   padding: 35px 50px 30px;
+}
+@media screen and (max-width: 768px) {
+  .demand__form.form {
+    padding: 20px 13px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 
 .demand__form .form__title {
@@ -4711,10 +4734,20 @@ button:focus {
   font-weight: 700;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 768px) {
+  .demand__form .form__title {
+    margin-bottom: 8px;
+  }
+}
 
 .demand__form .form__desc {
   max-width: 725px;
   margin: 0 auto 30px;
+}
+@media screen and (max-width: 768px) {
+  .demand__form .form__desc {
+    margin-bottom: 15px;
+  }
 }
 
 .demand__form .form__elem {
@@ -4724,13 +4757,28 @@ button:focus {
 .demand__form .form__row {
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .demand__form .form__row {
+    align-items: initial;
+  }
+}
 
 .demand__form .form__row:first-child {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .demand__form .form__row:first-child {
+    flex-direction: column;
+  }
+}
 
 .demand__form .form__row:last-child {
   margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .demand__form .form__row:last-child {
+    margin-top: 15px;
+  }
 }
 
 .demand__form .form__politics {
