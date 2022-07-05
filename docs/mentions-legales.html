@@ -87,7 +87,7 @@
         <!-- phone  -->
         <div class="header__phone phone">
           <a href="tel:+74951111111" class="phone__link">+7 (495) 111-11-11</a>
-          <button class="phone__btn">Получить обратный звонок</button>
+          <button class="phone__btn js-modal-call-btn">Получить обратный звонок</button>
         </div>
 
         <!-- toggle  -->
@@ -182,7 +182,7 @@
             <!-- phone mobile  -->
             <div class="header__phone--mobile phone">
               <a href="tel:+74951111111" class="phone__link">+7 (495) 111-11-11</a>
-              <button class="phone__btn">Получить обратный звонок</button>
+              <button class="phone__btn js-modal-call-btn">Получить обратный звонок</button>
             </div>
             <!-- phone mobile end  -->
           </li>
@@ -493,7 +493,7 @@
         <!-- phone  -->
         <div class="footer__phone phone">
           <a href="tel:+74951111111" class="phone__link">+7 (495) 111-11-11</a>
-          <button class="phone__btn phone__btn-1">Получить обратный звонок</button>
+          <button class="phone__btn phone__btn-1 js-modal-call-btn">Получить обратный звонок</button>
           <button class="phone__btn phone__btn-2">Заказать звонок</button>
         </div>
 
@@ -547,6 +547,47 @@
          <!-- оставить заявку end -->
     </div>
 
+  </div>
+
+  <div class="modal active" id="js-modal-call">
+
+    <div class="modal__content">
+      <button type="button" class="modal__close">
+        <img src="img/close-icon.svg" alt="close button">
+      </button>
+
+      <div class="modal__info">
+        <h5 class="modal__title">Оставьте ваши данные</h5>
+        <div class="modal__text">
+          и в течение 15 минут вам перезвонит наш менеджер для уточнения любых вопросов и составления сметы
+        </div>
+
+        <div class="modal__form form">
+          <form action="#" class="form__elem">
+            <div class="form__row">
+              <input type="text" class="form__input" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="form__row">
+              <input type="phone" class="form__input" name="phone" placeholder="Номер телефона">
+            </div>
+            <div class="form__row">
+              <button type="submit" class="btn form__btn">Заказать звонок</button>
+            </div>
+            <div class="form__row">
+              <div class="form__politics">
+                Нажимая на кнопку вы соглашаетесь с <a href="#" class="form__politics-link">условиями
+                  обработки данных и
+                  политикой конфиденциальности</a>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+
+    </div>
   </div>
 </footer>
 
