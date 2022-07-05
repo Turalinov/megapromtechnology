@@ -1179,7 +1179,7 @@
         </nav>
 
          <!-- оставить заявку  -->
-         <button type="button" class="footer__btn footer__btn-1 btn">Оставить заявку</button>
+         <button type="button" class="footer__btn footer__btn-1 btn js-modal-calculation-btn">Оставить заявку</button>
          <!-- оставить заявку end -->
 
 
@@ -1296,13 +1296,13 @@
       </div>
 
          <!-- оставить заявку  -->
-         <button type="button" class="footer__btn footer__btn-2 btn">Оставить заявку</button>
+         <button type="button" class="footer__btn footer__btn-2 btn js-modal-calculation-btn">Оставить заявку</button>
          <!-- оставить заявку end -->
     </div>
 
   </div>
 
-  <div class="modal active" id="js-modal-call">
+  <div class="modal" id="js-modal-call">
 
     <div class="modal__content">
       <button type="button" class="modal__close">
@@ -1335,6 +1335,91 @@
             </div>
 
           </form>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="modal active" id="js-modal-calculation">
+
+    <div class="modal__content">
+      <button type="button" class="modal__close">
+        <img src="img/close-icon.svg" alt="close button">
+      </button>
+
+      <div class="modal__info">
+        <h5 class="modal__title">Оставьте ваши данные</h5>
+        <div class="modal__text">
+          и мы свяжемся с вами для бесплатного расчета сметы проекта
+        </div>
+
+        <div class="modal__form form">
+          <form action="#" class="form__elem">
+            <div class="form__row">
+              <input type="text" class="form__input" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="form__row">
+              <input type="phone" class="form__input" name="phone" placeholder="Номер телефона">
+            </div>
+            <div class="form__row">
+              <input type="text" class="form__input" name="comment" placeholder="Комментарий">
+            </div>
+            <div class="form__row">
+              <label class="form__file btn btn--bordered">
+                <input type="file" name="file">Прикрепить файл
+              </label>
+            </div>
+            <div class="form__row">
+              <button type="submit" class="btn form__btn">Заказать звонок</button>
+            </div>
+            <div class="form__row">
+              <div class="form__politics">
+                Нажимая на кнопку вы соглашаетесь с <a href="#" class="form__politics-link">условиями
+                  обработки данных и
+                  политикой конфиденциальности</a>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="modal" id="js-modal-success">
+
+    <div class="modal__content">
+      <button type="button" class="modal__close">
+        <img src="img/close-icon.svg" alt="close button">
+      </button>
+
+      <div class="modal__info">
+        <h5 class="modal__title">Ваша заявка успешно отправлена</h5>
+
+
+      </div>
+
+
+    </div>
+  </div>
+  <div class="modal " id="js-modal-regions">
+
+    <div class="modal__content">
+      <button type="button" class="modal__close">
+        <img src="img/close-icon.svg" alt="close button">
+      </button>
+
+      <div class="modal__info">
+        <h5 class="modal__title">Выберите город</h5>
+
+        <div class="modal__text js-regions">
+
         </div>
 
       </div>

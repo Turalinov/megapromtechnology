@@ -6297,11 +6297,17 @@ button:focus {
   border: 1px solid #B7B7B7;
 }
 
-.modal__form .form__btn {
-  padding: 18px 36px;
+.modal__form .form__file {
+  color: #ED801B;
+}
+
+.modal__form .form__btn,
+.modal__form .form__file {
+  padding: 18px 39px;
 }
 @media screen and (max-width: 768px) {
-  .modal__form .form__btn {
+  .modal__form .form__btn,
+.modal__form .form__file {
     padding: 17px 25px;
   }
 }
