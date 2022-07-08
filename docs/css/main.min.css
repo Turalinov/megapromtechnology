@@ -348,6 +348,11 @@ body {
   color: var(--clr-main);
   background-color: var(--clr-white);
 }
+@media screen and (max-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     font-size: 14px;
@@ -1398,6 +1403,67 @@ button:focus {
 @media screen and (max-width: 768px) {
   .cabinet {
     padding: 68px 0 25px;
+  }
+}
+
+.general {
+  padding-top: 100px;
+  padding-bottom: 35px;
+}
+@media screen and (max-width: 992px) {
+  .general {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .general {
+    padding-top: 109px;
+    padding-bottom: 40px;
+  }
+}
+
+.general__content {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .general__content {
+    flex-direction: column-reverse;
+  }
+}
+
+.general__img {
+  flex: 1 1 40%;
+}
+@media screen and (max-width: 768px) {
+  .general__img {
+    flex: initial;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.general__info {
+  margin-left: 50px;
+  flex: 1 1 60%;
+}
+@media screen and (max-width: 768px) {
+  .general__info {
+    margin-left: 0;
+    margin-bottom: 15px;
+  }
+}
+
+.general__img-elem {
+  width: 100%;
+  object-fit: cover;
+}
+
+.title.general__title {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 992px) {
+  .title.general__title {
+    margin-bottom: 25px;
   }
 }
 
