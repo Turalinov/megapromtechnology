@@ -1629,6 +1629,119 @@ button:focus {
   }
 }
 
+.directions {
+  padding: 35px 0 45px;
+}
+@media screen and (max-width: 768px) {
+  .directions {
+    padding: 40px 0;
+  }
+}
+
+.title.directions__title {
+  max-width: 867px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .title.directions__title {
+    margin-bottom: 25px;
+  }
+}
+
+.directions__list {
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -22px;
+  margin-left: -50px;
+}
+@media screen and (max-width: 992px) {
+  .directions__list {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .directions__list {
+    font-size: 17px;
+    flex-direction: column;
+    margin-bottom: -15px;
+    margin-left: 0;
+  }
+}
+
+.directions__item {
+  padding-left: 70px;
+  width: calc(50% - 50px);
+  position: relative;
+  margin-bottom: 22px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 768px) {
+  .directions__item {
+    padding-left: 40px;
+    width: 90%;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+}
+
+.directions__item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .directions__item::after {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .directions__item:nth-child(1) {
+    order: 10;
+  }
+}
+.directions__item:nth-child(1):after {
+  background-image: url("../img/icon-directions1.svg");
+}
+
+@media screen and (max-width: 768px) {
+  .directions__item:nth-child(2) {
+    order: 40;
+  }
+}
+.directions__item:nth-child(2):after {
+  background-image: url("../img/icon-directions2.svg");
+}
+
+@media screen and (max-width: 768px) {
+  .directions__item:nth-child(3) {
+    order: 10;
+  }
+}
+.directions__item:nth-child(3):after {
+  background-image: url("../img/icon-directions3.svg");
+}
+
+@media screen and (max-width: 768px) {
+  .directions__item:nth-child(4) {
+    order: 10;
+  }
+}
+.directions__item:nth-child(4):after {
+  background-image: url("../img/icon-directions4.svg");
+}
+
 .email, .phone {
   display: flex;
   flex-direction: column;
