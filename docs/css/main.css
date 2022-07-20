@@ -7533,6 +7533,78 @@ button:focus {
   font-size: 16px;
 }
 
+.certification {
+  padding-top: 100px;
+  padding-bottom: 35px;
+}
+@media screen and (max-width: 992px) {
+  .certification {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .certification {
+    padding-top: 109px;
+    padding-bottom: 40px;
+  }
+}
+
+.certification__title {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .certification__title {
+    margin-bottom: 25px;
+  }
+}
+
+.certification__wrap {
+  display: flex;
+  align-items: flex-start;
+}
+@media screen and (max-width: 768px) {
+  .certification__wrap {
+    flex-direction: column;
+  }
+}
+
+.certification__info {
+  width: 60%;
+  margin-right: 68px;
+}
+@media screen and (max-width: 768px) {
+  .certification__info {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 18px;
+  }
+}
+
+.certification__content p + p {
+  margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+  .certification__content p + p {
+    margin-top: 10px;
+  }
+}
+
+.certification__img {
+  width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .certification__img {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.certification__img-elem {
+  object-fit: cover;
+  width: 100%;
+}
+
 .results {
   display: flex;
   justify-content: space-between;
