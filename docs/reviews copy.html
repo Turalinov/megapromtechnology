@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Description Нормативные документы" />
+  <meta name="description" content="Description Отзывы" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,7 @@
         });
       </script>
 
-  <title>Нормативные документы</title>
+  <title>Отзывы</title>
 </head>
 
 
@@ -208,7 +208,7 @@
                   <a href="regulations.html">Нормативные документы</a>
                 </li>
                 <li class="">
-                  <a href="#">Отзывы</a>
+                  <a href="reviews.html">Отзывы</a>
                 </li>
               </ul>
             </li>
@@ -305,339 +305,87 @@
 
 
       <main>
-        <section class="certification">
+        <section class="reviews">
   <div class="container">
+    <h3 class="title reviews__title">Отзывы заказчиков</h3>
 
-    <div class="certification__wrap">
+    <ul class="reviews__list" id="reviews-tab-gallery">
+      <li class="reviews__item">
 
-      <div class="certification__info">
-        <h3 class="title certification__title">Сертификаты</h3>
-        <div class="certification__content">
-          <p>
-            Все виды оказываемых работ, а также собственные материалы, техника и оборудование имеют государственную
-            сертификацию.
-          </p>
-          <p>
-            Ниже представлены сертификаты и патенты собственной продукции ООО “МЕГАПРОМГРУПП-ТЕХНОЛОГИИ”:
-          </p>
+        <div class="reviews__img">
+          <img src="img/review1.png" alt="отзыв" data-img="img/review1-big.png" class="reviews__img-elem">
         </div>
-      </div>
 
-      <div class="certification__img">
-        <img src="img/logo-big.png" alt="Лого" class="certification__img-elem" width="445" height="206">
-      </div>
-    </div>
-
-
-  </div>
-</section>
-
-        <section class="section patents">
-  <div class="container">
-    <h3 class="title patents__title">Сертификаты и патенты</h3>
-
-    <!-- Главный контейнер слайдера -->
-    <div class="patents__slider swiper" >
-      <!-- Обязательная оболочка -->
-      <ul class="patents__list swiper-wrapper" id="patents-tab-gallery">
-        <!-- Слайды (c хэшом навигации)-->
-        <li class="patents__item swiper-slide">
-          <!-- Контент внутри слайдера -->
-
-          <img src="img/patent1.png" data-img="img/patent1-big.png" alt="Патент" class="patents__item-img">
-
-        </li>
-        <!-- Слайды (c хэшом навигации)-->
-        <li class="patents__item swiper-slide">
-          <!-- Контент внутри слайдера -->
-          <img src="img/patent2.png" data-img="img/patent2-big.png" alt="Патент" class="patents__item-img">
-
-        </li>
-        <!-- Слайды (c хэшом навигации)-->
-        <li class="patents__item swiper-slide">
-          <!-- Контент внутри слайдера -->
-          <img src="img/patent3.png" data-img="img/patent3-big.png" alt="Патент" class="patents__item-img">
-
-        </li>
-        <!-- Слайды (c хэшом навигации)-->
-        <li class="patents__item swiper-slide">
-          <!-- Контент внутри слайдера -->
-          <img src="img/patent4.png" data-img="img/patent4-big.png" alt="Патент" class="patents__item-img">
-
-        </li>
-
-
-      </ul>
-    </div>
-
-
-      <div class="slider-btns">
-        <!-- If we need navigation buttons -->
-        <div class="slider-btn slider-btn-prev patents__btn-next"></div>
-        <div class="slider-btn slider-btn-next patents__btn-prev"></div>
-
-      </div>
-
-  </div>
-</section>
-
-        <section class="section normative">
-  <div class="container">
-    <h3 class="title normative__title">Нормативные документы</h3>
-
-    <!-- Главный контейнер слайдера -->
-    <div class="normative__slider swiper">
-      <!-- Обязательная оболочка -->
-      <ul class="normative__list swiper-wrapper" id="normative-tab-gallery">
-        <!-- Слайды (c хэшом навигации)-->
-        <li class="normative__item swiper-slide">
-          <!-- Контент внутри слайдера -->
-
-          <img src="img/normative1.png" data-img="img/normative1-big.png" alt="Патент" class="normative__item-img">
-
-        </li>
-        <!-- Слайды (c хэшом навигации)-->
-        <li class="normative__item swiper-slide">
-          <!-- Контент внутри слайдера -->
-          <img src="img/normative2.png" data-img="img/normative2-big.png" alt="Патент" class="normative__item-img">
-
-        </li>
-        <!-- Слайды (c хэшом навигации)-->
-        <li class="normative__item swiper-slide">
-          <!-- Контент внутри слайдера -->
-          <img src="img/normative3.png" data-img="img/normative3-big.png" alt="Патент" class="normative__item-img">
-
-        </li>
-        <!-- Слайды (c хэшом навигации)-->
-        <li class="normative__item swiper-slide">
-          <!-- Контент внутри слайдера -->
-          <img src="img/normative4.png" data-img="img/normative4-big.png" alt="Патент" class="normative__item-img">
-
-        </li>
-
-
-      </ul>
-    </div>
-
-
-    <div class="slider-btns">
-      <!-- If we need navigation buttons -->
-      <div class="slider-btn slider-btn-prev normative__btn-next"></div>
-      <div class="slider-btn slider-btn-next normative__btn-prev"></div>
-
-    </div>
-
-  </div>
-</section>
-
-        <section class="section safety">
-  <div class="container">
-    <h3 class="title safety__title">
-      Политика в области охраны труда
-    </h3>
-
-    <div class="safety__content">
-      <p>
-        Охрана здоровья и обеспечение безопасности труда персонала, наряду с высоким качеством производства работ,
-        являются приоритетным направлением деятельности нашей компании.
-      </p>
-      <p>
-        Осознавая свою ответственность за сохранение жизни и здоровья работников ООО «МЕГАПРОМТЕХНОЛОГИИ» принимает на
-        себя следующие обязательства:</p>
-        <ul>
-          <li>соблюдать требования законодательства Российской Федерации и других нормативных актов по охране труда;
-           </li>
-           <li> обеспечивать безопасность труда и сохранение здоровья всего персонала путем принятия предупреждающих мер
-             по
-             недопущению травм и ухудшения здоровья;</li>
-          <li>доводить до каждого работника информацию о выявленных опасностях и рисках профессиональной безопасности и
-            здоровья на рабочих местах;</li>
-          <li> поддерживать на высоком уровне и постоянно улучшать подготовку сотрудников в области охраны труда путем
-            организации качественного обучения;</li>
-          <li>проводить экономическую политику, стимулирующую создание условий труда, соответствующих государственным
-            нормативным требованиям охраны труда;</li>
-          <li>обеспечивать персонал современными средствами коллективной и индивидуальной защиты;</li>
-          <li>обеспечивать функционирование всех уровней производственного контроля за соблюдением и выполнением на
-            рабочих
-            местах законодательных и других требований в области профессиональной безопасности и здоровья;</li>
-          <li>повышать уровень ответственности и обеспечивать вовлеченность каждого работника, независимо от его
-            профессии или
-            должности, в соблюдение обязанностей в области охраны здоровья и безопасности труда;</li>
-          <li>своевременно проводить специальную оценку условий труда и - - -производственный контроль за соблюдением
-            санитарных правил и выполнением санитарно-противоэпидемических (профилактических) мероприятий;</li>
-          <li>обеспечение доступности достоверной информации о состоянии охраны труда в компании, как от работодателя к
-            работнику, так и в обратном направлении;</li>
-          <li>постоянное совершенствование системы управления охраной труда для поддержания её в виде, соответствующем
-            текущим
-            потребностям общества.</li>
-        </ul>
-        <p>Руководство ООО «МЕГАПРОМТЕХНОЛОГИИ» принимает на себя ответственность за реализацию настоящей Политики путем
-          установления соответствующих целей и задач, планирования и финансирования мероприятий по их достижению,
-          обязуется уважать названные ценности и призывает к этому всех сотрудников.</p>
-          <a href="#">Положение о системе управления охраной труда</a>
-    </div>
-  </div>
-</section>
-
-        <section class="section smart">
-  <div class="container">
-    <h3 class="title smart__title">
-      Учетная карта предприятия
-    </h3>
-
-    <div class="smart__table">
-      <div class="smart__tr">
-        <div class="smart__td">
-          Наименование предприятия
+        <div class="reviews__text">
+          Отзыв ООО “ЗАПОЛЯРСПЕЦРЕМСТРОЙ” о производстве и поставке ТМЦ, а также комплектации объекта “под ключ”
         </div>
-        <div class="smart__td">
-          Общество с ограниченной ответственностью<br>“МЕГАПРОМГРУПП” (ООО “МПГ”)
+      </li>
+      <li class="reviews__item">
+
+        <div class="reviews__img">
+          <img src="img/review2.png" alt="отзыв" data-img="img/review2-big.png" class="reviews__img-elem">
         </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">Юридический адрес
+
+        <div class="reviews__text">
+          Рекомендация ООО “МЕГАПРОМГРУПП” как надежного изготовителя и поставщика трубной продукции, запорных арматур,
+          фасонных изделий, бугельных опор и др.
         </div>
-        <div class="smart__td">620073, Свердловская обл, г. Екатеринбург,<br>ул. Крестинского, 44, офис 600
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">Почтовый адрес (адрес местонахождения)
-        </div>
-        <div class="smart__td">620073, Свердловская обл, г. Екатеринбург,<br>ул. Крестинского, 44, офис 600
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">ИНН/ КПП
-        </div>
-        <div class="smart__td">6674379273/ 667901001
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">ОГРН
-        </div>
-        <div class="smart__td">1116674011112
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">ОКТМО
-        </div>
-        <div class="smart__td">65701000
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">ОКВЭД
-        </div>
-        <div class="smart__td">
-          <ul class="smart__details-list">
-            <li>46.4 Торговля оптовая непродовольственными потребительскими товарами
-            <li>25.1 Производство строительных металлических конструкций и изделий
-            <li>25.93.1 Производство изделий из проволоки и пружин
-            <li>25.94 Производство крепежных изделий
-            <li>28.14 Производство арматуры трубопроводной (арматуры)
-            <li>28.29 Производство прочих машин и оборудования общего назначения, не включенного в другие группировки
-            <li>46.6 Торговля оптовая прочими машинами, оборудованием и принадлежностями
-            <li class="delimiter">46.90 Торговля оптовая Неспециализированная
-            <li>52.29 Деятельность вспомогательная прочая, связанная с перевозками
-            <li>43.1 Разборка и снос зданий, подготовка строительного участка
-            <li>43.11  Разборка и снос зданий
-            <li>43.12 Подготовка строительной площадки
-            <li>43.12.1 Расчистка территории строительной площадки
-            <li>43.12.2 Производство дренажных работ на сельскохозяйственных землях, землях лесных территорий, а также на строительных площадках
-            <li>43.12.3 Производство земляных работ
-            <li>43.12.4 Подготовка участка к разработке и добыче полезных ископаемых, за исключением нефтяных и газовых участков
-            <li>43.13 Разведочное бурение
-            <li>43.2 Производство электромонтажных, санитарно-технических и прочих строительно-монтажных работ
-            <li>43.21 Производство электромонтажных работ
-            <li>43.22 Производство санитарно-технических работ, монтаж отопительных систем и систем кондиционирования воздуха
-            <li>43.29 Производство прочих строительно-монтажных работ
-            <li>43.3 Работы строительные отделочные
-            <li>43.31 Производство штукатурных работ
-            <li>43.32 Работы столярные и плотничные
-            <li>43.32.1 Установка дверей (кроме автоматических и вращающихся), окон, дверных и оконных рам из <li>дерева или прочих материалов
-            <li>43.32.2 Работы по установке внутренних лестниц, встроенных шкафов, встроенного кухонного оборудования
-            <li>43.32.3 Производство работ по внутренней отделке зданий (включая потолки, раздвижные и съемные перегородки и т.д.)
-            <li>43.33 Работы по устройству покрытий полов и облицовке стен
-            <li>43.34 Производство малярных и стекольных работ
-            <li>43.34.1 Производство малярных работ
-            <li>43.34.2 Производство стекольных работ
-            <li>43.39 Производство прочих отделочных и завершающих работ
-            <li>43.9 Работы строительные специализированные прочие
-            <li>43.91 Производство кровельных работ
-            <li>43.99 Работы строительные специализированные прочие, не включенные в другие группировки
-            <li>43.99.1 Работы гидроизоляционные
-            <li>43.99.2 Работы по установке строительных лесов и подмостей
-            <li>43.99.3 Работы свайные и работы по строительству фундаментов
-            <li>43.99.4 Работы бетонные и железобетонные
-            <li>43.99.5 Работы по монтажу стальных строительных конструкций
-            <li>43.99.6 Работы каменные и кирпичные
-            <li>43.99.7 Работы по сборке и монтажу сборных конструкций
-            <li>43.99.9 Работы строительные специализированные, не включенные в другие группировки
+      </li>
+      <li class="reviews__item">
+
+
+        <!-- Главный контейнер слайдера -->
+        <div class="reviews__slider swiper">
+          <!-- Обязательная оболочка -->
+          <ul class="reviews__slider-list swiper-wrapper">
+            <!-- Слайды (c хэшом навигации)-->
+            <li class="reviews__slider-item swiper-slide">
+              <!-- Контент внутри слайдера -->
+              <div class="reviews__img">
+                <img src="img/review3.png" alt="отзыв" data-img="img/review3-big.png" class="reviews__img-elem">
+              </div>
+            </li>
+            <!-- Слайды (c хэшом навигации)-->
+            <li class="reviews__slider-item swiper-slide">
+              <!-- Контент внутри слайдера -->
+              <div class="reviews__img">
+                <img src="img/review3-1.png" alt="отзыв" data-img="img/review3-1-big.png" class="reviews__img-elem">
+              </div>
+            </li>
+
           </ul>
-          <a href="#" class=" smart__details-link">Показать все ОКВЭД</a>
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">ОКОГУ
-        </div>
-        <div class="smart__td">4210014
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">ОКПО
-        </div>
-        <div class="smart__td">92906955
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">Банковские реквизиты
-        </div>
-        <div class="smart__td">Точка ПАО Банка “ФК Открытие”<br>
-          р/с 40702810102500048838<br>
-          к/с 3010181045250000999<br>
-          БИК 044525999
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">Электронная почта
-        </div>
-        <div class="smart__td">office@mpg-ural.ru<br>
-          info-mpg@yandex.ru
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">Телефон/ факс
-        </div>
-        <div class="smart__td">+7 (343)221-37-37
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">Руководитель
-        </div>
-        <div class="smart__td">Генеральный директор
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">ФИО руководителя
-        </div>
-        <div class="smart__td">Голодков Семён Николаевич
-        </div>
-      </div>
-      <div class="smart__tr">
-        <div class="smart__td">Действующий
-        </div>
-        <div class="smart__td">на основании Устава
-        </div>
-      </div>
+          <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
+          <div class="reviews__pagination swiper-pagination"></div>
 
+        </div>
+        <div class="reviews__text">
+          Отзыв ОАО “ИНЖЕНЕРНЫЙ ЦЕНТР ЭНЕРГЕТИКИ УРАЛА”. Рекомендация ООО “МЕГАПРОМГРУПП” как надежного изготовителя и
+          поставщика технологических опор трубопроводов
+        </div>
+      </li>
+      <li class="reviews__item">
 
-    </div>
+        <div class="reviews__img">
+          <img src="img/review4.png" alt="отзыв" data-img="img/review4-big.png" class="reviews__img-elem">
+        </div>
 
+        <div class="reviews__text">
+          Отзыв ООО “ПОЛЯРСТРОЙКОМПЛЕКТ” о техническом перевооружении, реконструкции и расширении действующих мощностей
+          Уренгойского НГКМ ООО”Газпром добыча Уренгой”...
+        </div>
+      </li>
+      <li class="reviews__item">
 
-    <a href="#" class="smart__link">Скачать учетную карточку предприятия</a>
+        <div class="reviews__img">
+          <img src="img/review5.png" alt="отзыв" data-img="img/review5-big.png" class="reviews__img-elem">
+        </div>
 
-
-
-
+        <div class="reviews__text">
+          Отзыв “ВМЗ”, филиала ФГУП “ГКНПЦ им. М.В. Хруничева” о поставке ТМЦ по направлению комплектации трубопроводов
+          бугельными опорами.
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -736,10 +484,10 @@
               <a href="#">Наши проекты</a>
             </li>
             <li>
-              <a href="#">Отзывы заказчиков</a>
+              <a href="reviews.html">Отзывы заказчиков</a>
             </li>
             <li>
-              <a href="#">Документация</a>
+              <a href="regulations.html">Документация</a>
             </li>
           </ul>
         </nav>
@@ -1040,6 +788,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/fullscreen/lg-fullscreen.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/zoom/lg-zoom.min.js"></script>
+<script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
 <script src="js/app.min.js"></script>
 </body>
 
