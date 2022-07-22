@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Description Отзывы" />
+  <meta name="description" content="Description Статья" />
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,7 +32,7 @@
         });
       </script>
 
-  <title>Отзывы</title>
+  <title>Статья</title>
 </head>
 
 
@@ -235,7 +235,7 @@
               <a href="#">Проекты</a>
             </li>
             <li>
-              <a href="#">Статьи</a>
+              <a href="blog.html">Статьи</a>
             </li>
             <li class="menu__item">
               <a href="#">Контакты</a>
@@ -305,87 +305,41 @@
 
 
       <main>
-        <section class="reviews">
+        <section class="article">
   <div class="container">
-    <h3 class="title reviews__title">Отзывы заказчиков</h3>
-
-    <ul class="reviews__list" id="reviews-tab-gallery">
-      <li class="reviews__item">
-
-        <div class="reviews__img">
-          <img src="img/review1.png" alt="отзыв" data-img="img/review1-big.png" class="reviews__img-elem">
-        </div>
-
-        <div class="reviews__text">
-          Отзыв ООО “ЗАПОЛЯРСПЕЦРЕМСТРОЙ” о производстве и поставке ТМЦ, а также комплектации объекта “под ключ”
-        </div>
-      </li>
-      <li class="reviews__item">
-
-        <div class="reviews__img">
-          <img src="img/review2.png" alt="отзыв" data-img="img/review2-big.png" class="reviews__img-elem">
-        </div>
-
-        <div class="reviews__text">
-          Рекомендация ООО “МЕГАПРОМГРУПП” как надежного изготовителя и поставщика трубной продукции, запорных арматур,
-          фасонных изделий, бугельных опор и др.
-        </div>
-      </li>
-      <li class="reviews__item">
 
 
-        <!-- Главный контейнер слайдера -->
-        <div class="reviews__slider swiper">
-          <!-- Обязательная оболочка -->
-          <ul class="reviews__slider-list swiper-wrapper">
-            <!-- Слайды (c хэшом навигации)-->
-            <li class="reviews__slider-item swiper-slide">
-              <!-- Контент внутри слайдера -->
-              <div class="reviews__img">
-                <img src="img/review3.png" alt="отзыв" data-img="img/review3-big.png" class="reviews__img-elem">
-              </div>
-            </li>
-            <!-- Слайды (c хэшом навигации)-->
-            <li class="reviews__slider-item swiper-slide">
-              <!-- Контент внутри слайдера -->
-              <div class="reviews__img">
-                <img src="img/review3-1.png" alt="отзыв" data-img="img/review3-1-big.png" class="reviews__img-elem">
-              </div>
-            </li>
+    <div class="article__wrap">
 
-          </ul>
-          <!-- Добавляем если нам нужна пагинация (параметр pagination)   -->
-          <div class="reviews__pagination swiper-pagination"></div>
+      <div class="article__img">
+        <img src="img/article-single.png" alt="статья" class="article__img-elem">
+      </div>
 
-        </div>
-        <div class="reviews__text">
-          Отзыв ОАО “ИНЖЕНЕРНЫЙ ЦЕНТР ЭНЕРГЕТИКИ УРАЛА”. Рекомендация ООО “МЕГАПРОМГРУПП” как надежного изготовителя и
-          поставщика технологических опор трубопроводов
-        </div>
-      </li>
-      <li class="reviews__item">
+      <h3 class="article__title">
+        Компания «МЕГАПРОМГРУПП» - 10 лет успешной работы
+      </h3>
 
-        <div class="reviews__img">
-          <img src="img/review4.png" alt="отзыв" data-img="img/review4-big.png" class="reviews__img-elem">
-        </div>
 
-        <div class="reviews__text">
-          Отзыв ООО “ПОЛЯРСТРОЙКОМПЛЕКТ” о техническом перевооружении, реконструкции и расширении действующих мощностей
-          Уренгойского НГКМ ООО”Газпром добыча Уренгой”...
-        </div>
-      </li>
-      <li class="reviews__item">
+      <div class="article__date">09.06.2022</div>
 
-        <div class="reviews__img">
-          <img src="img/review5.png" alt="отзыв" data-img="img/review5-big.png" class="reviews__img-elem">
-        </div>
+      <div class="article__content">
+        Компании «МЕГАПРОМГРУПП» - 10 лет, и за эти годы мы зарекомендовали себя как надежного и ответственного
+        партнера! Начиная с момента основания и регистрации нашей компании 29.06.2011 года, мы активно развивались,
+        осваивали новые производственные процессы, чтобы иметь возможность предлагать каждому нашему клиенту максимально
+        широкий выбор теплоизоляционных материалов. Мы расширяли перечень производимых нами металлоконструкций,
+        возможности в направлении оказания строительных и монтажных работ, услуг инженерного и технологического
+        контроля, повышали уровень профессионализма сотрудников, чтобы предлагать вам только самый качественный продукт
+        и выполнять любые, даже самые сложные заказы.
+      </div>
 
-        <div class="reviews__text">
-          Отзыв “ВМЗ”, филиала ФГУП “ГКНПЦ им. М.В. Хруничева” о поставке ТМЦ по направлению комплектации трубопроводов
-          бугельными опорами.
-        </div>
-      </li>
-    </ul>
+
+      <div class="article__links">
+        <a href="blog.html" class="btn article__link">Все статьи</a>
+        <a href="article.html" class="btn btn--bordered article__link article__link--bordered">перейти к следующей</a>
+      </div>
+
+    </div>
+
   </div>
 </section>
 
@@ -455,7 +409,7 @@
               <a href="#">Проекты</a>
             </li>
             <li>
-              <a href="#">Статьи</a>
+              <a href="blog.html">Статьи</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -788,7 +742,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/fullscreen/lg-fullscreen.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/zoom/lg-zoom.min.js"></script>
-<script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
 <script src="js/app.min.js"></script>
 </body>
 
