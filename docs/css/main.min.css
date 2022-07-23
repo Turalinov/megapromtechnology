@@ -1835,6 +1835,47 @@ button:focus {
   }
 }
 
+.empty {
+  padding-top: 100px;
+  padding-bottom: 35px;
+}
+@media screen and (max-width: 992px) {
+  .empty {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .empty {
+    padding-top: 109px;
+    padding-bottom: 40px;
+  }
+}
+
+.empty__title {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  .empty__title {
+    margin-bottom: 25px;
+  }
+}
+
+.epmty__desc {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.empty__text {
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .empty__text {
+    margin-bottom: 20px;
+  }
+}
+
 .courses {
   padding: 50px 0;
 }
