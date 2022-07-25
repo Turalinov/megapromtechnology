@@ -3454,6 +3454,10 @@ button:focus {
   text-decoration: none;
 }
 
+.form__error {
+  color: #ff6363;
+}
+
 .geography.geography--inner {
   padding-top: 100px;
   padding-bottom: 35px;

@@ -865,9 +865,13 @@
             </div>
             <div class="form__row">
               <input type="phone" class="form__input" name="phone" placeholder="Номер телефона">
+              <input type="hidden" name="type" value="call">
             </div>
             <div class="form__row">
               <button type="submit" class="btn form__btn">Заказать звонок</button>
+            </div>
+            <div class="form__row">
+              <div class="form__error"></div>
             </div>
             <div class="form__row">
               <div class="form__politics">
@@ -913,10 +917,14 @@
             <div class="form__row">
               <label class="form__file btn btn--bordered">
                 <input type="file" name="file">Прикрепить файл
+                <input type="hidden" name="type" value="calculation">
               </label>
             </div>
             <div class="form__row">
               <button type="submit" class="btn form__btn">Заказать звонок</button>
+            </div>
+            <div class="form__row">
+              <div class="form__error"></div>
             </div>
             <div class="form__row">
               <div class="form__politics">

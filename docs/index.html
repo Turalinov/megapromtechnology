@@ -523,10 +523,14 @@
           <div class="form__row">
             <label class="form__file btn btn--bordered">
               <input type="file" name="file">Прикрепить файл
+              <input type="hidden" name="type" value="calculation">
             </label>
           </div>
           <div class="form__row">
             <button type="submit" class="btn form__btn">Заказать звонок</button>
+          </div>
+          <div class="form__row">
+            <div class="form__error"></div>
           </div>
           <div class="form__row">
             <div class="form__politics">
@@ -1056,6 +1060,7 @@
           </div>
           <div class="form__block">
             <input type="phone" class="form__input" name="phone" placeholder="Номер телефона">
+            <input type="hidden" name="type" value="request">
           </div>
           <div class="form__block">
             <button type="submit" class="btn form__btn">Оставить заявку</button>
@@ -1068,7 +1073,9 @@
 
         </div>
         <!-- первая строка end  -->
-
+        <div class="form__row">
+          <div class="form__error"></div>
+        </div>
         <!-- вторая строка  -->
         <div class="form__row">
           <div class="form__politics">
@@ -1306,9 +1313,13 @@
             </div>
             <div class="form__row">
               <input type="phone" class="form__input" name="phone" placeholder="Номер телефона">
+              <input type="hidden" name="type" value="call">
             </div>
             <div class="form__row">
               <button type="submit" class="btn form__btn">Заказать звонок</button>
+            </div>
+            <div class="form__row">
+              <div class="form__error"></div>
             </div>
             <div class="form__row">
               <div class="form__politics">
@@ -1354,10 +1365,14 @@
             <div class="form__row">
               <label class="form__file btn btn--bordered">
                 <input type="file" name="file">Прикрепить файл
+                <input type="hidden" name="type" value="calculation">
               </label>
             </div>
             <div class="form__row">
               <button type="submit" class="btn form__btn">Заказать звонок</button>
+            </div>
+            <div class="form__row">
+              <div class="form__error"></div>
             </div>
             <div class="form__row">
               <div class="form__politics">
