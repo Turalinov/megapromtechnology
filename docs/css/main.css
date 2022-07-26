@@ -1677,6 +1677,11 @@ button:focus {
   background: var(--clr-black);
   opacity: 0.05;
 }
+@media screen and (max-width: 768px) {
+  .decoration__line {
+    opacity: 0.01;
+  }
+}
 .decoration__line:nth-child(1) {
   left: 25%;
 }
@@ -8199,6 +8204,34 @@ button:focus {
 
 .type__item.type__item--reclamation::after {
   background-image: url("../img/icon-reclamation.svg");
+}
+
+.type__item.type__item--reclamation-1::after {
+  background-image: url("../img/icon-reclamation-1.svg");
+}
+
+.type__item.type__item--court::after {
+  background-image: url("../img/icon-court.svg");
+}
+
+.type__item.type__item--territories::after {
+  background-image: url("../img/icon-territories.svg");
+}
+
+.type__item.type__item--engineering-1::after {
+  background-image: url("../img/icon-engineering-1.svg");
+}
+
+.type__item.type__item--sign::after {
+  background-image: url("../img/icon-sign.svg");
+}
+
+.type__item.type__item--serv::after {
+  background-image: url("../img/icon-serv.svg");
+}
+
+.type__item.type__item--construction::after {
+  background-image: url("../img/icon-construction.svg");
 }
 
 .type__title {

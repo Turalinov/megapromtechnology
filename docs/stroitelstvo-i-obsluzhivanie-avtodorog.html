@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Description Услуги" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/css/lightgallery.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+    integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"
+      integrity="sha256-xH4q8N0pEzrZMaRmd7gQVcTZiFei+HfRTBPJ1OGXC0k=" crossorigin="anonymous"></script>
+
+      <script>
+        $(document).ready(function(){
+          $(".draggable").draggable({ containment:'' });
+        });
+      </script>
+
+  <title>Услуги</title>
+</head>
+
+
+
+
+<body>
+  <!-- loader  -->
+  <div class="loader">
+    <div class="loader_inner">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 111.27 107.59">
+        <path class="cls-1"
+          d="M33.74,92a8,8,0,1,0,0,16H89a8,8,0,1,0,0-16H33.74ZM89,111.65H33.74a11.59,11.59,0,1,1,0-23.17H89a11.59,11.59,0,1,1,0,23.17h0Z"
+          transform="translate(-4.37 -4.71)" />
+        <path class="cls-1"
+          d="M35.52,97.39a2.67,2.67,0,1,0,2.67,2.67,2.68,2.68,0,0,0-2.67-2.67m0,8.91a6.24,6.24,0,1,1,6.24-6.24,6.24,6.24,0,0,1-6.24,6.24"
+          transform="translate(-4.37 -4.71)" />
+        <path class="cls-1"
+          d="M87.21,97.39a2.67,2.67,0,1,0,2.67,2.67,2.68,2.68,0,0,0-2.67-2.67m0,8.91a6.24,6.24,0,1,1,6.24-6.24,6.24,6.24,0,0,1-6.24,6.24"
+          transform="translate(-4.37 -4.71)" />
+        <path class="cls-1"
+          d="M41.15,102.73H81.58a6.2,6.2,0,0,1,0-5.35H41.15a6.2,6.2,0,0,1,0,5.35h0Zm-4.74,1.69h0Zm49.91,1.87H36.41a1.78,1.78,0,0,1-1.78-1.78,1.88,1.88,0,0,1,1.43-1.84,2.67,2.67,0,0,0,0-5.24,1.78,1.78,0,0,1-1.43-1.75,1.86,1.86,0,0,1,1.78-1.87H86.32a1.78,1.78,0,0,1,1.78,1.78,1.88,1.88,0,0,1-1.43,1.84,2.67,2.67,0,0,0,0,5.24,1.78,1.78,0,0,1,1.43,1.75,1.86,1.86,0,0,1-1.78,1.87h0Z"
+          transform="translate(-4.37 -4.71)" />
+        <g class="excavator-body">
+          <path class="cls-1"
+            d="M54.24,88.48H68.5V86.69H54.24v1.78Zm16,3.56H52.46a1.78,1.78,0,0,1-1.78-1.78V84.91a1.78,1.78,0,0,1,1.78-1.78H70.28a1.78,1.78,0,0,1,1.78,1.78v5.35A1.78,1.78,0,0,1,70.28,92h0Z"
+            transform="translate(-4.37 -4.71)" />
+          <path class="cls-1"
+            d="M25.72,83.13H75.63V63.87a9.26,9.26,0,0,0-9.25-9.25H52.46a1.79,1.79,0,0,0-1.79,1.79V70.65a1.78,1.78,0,0,1-1.78,1.78H29.43a3.71,3.71,0,0,0-3.71,3.71v7Zm51.69,3.57H23.94a1.78,1.78,0,0,1-1.78-1.78V76.14a7.28,7.28,0,0,1,7.27-7.27H47.11V56.4A5.36,5.36,0,0,1,52.46,51H66.37A12.82,12.82,0,0,1,79.19,63.87v21a1.78,1.78,0,0,1-1.78,1.78h0Z"
+            transform="translate(-4.37 -4.71)" />
+          <path class="cls-1"
+            d="M25.72,76h7.07a3.63,3.63,0,0,0,3.62-3.56h-7A3.71,3.71,0,0,0,25.72,76m7.07,3.56H23.94a1.78,1.78,0,0,1-1.78-1.78V76.14a7.28,7.28,0,0,1,7.27-7.27H38.2A1.78,1.78,0,0,1,40,70.65v1.73a7.19,7.19,0,0,1-7.18,7.18"
+            transform="translate(-4.37 -4.71)" />
+          <path class="cls-1"
+            d="M59.58,54.61v11a5.48,5.48,0,0,0,3.6,5.14l12.44,4.53V63.87a9.35,9.35,0,0,0-4.11-7.71,9.57,9.57,0,0,0-5.43-1.55h-6.5Zm17.82,25a1.76,1.76,0,0,1-.61-0.11L62,74.06A9.06,9.06,0,0,1,56,65.57V52.83A1.78,1.78,0,0,1,57.8,51h8.28a13.1,13.1,0,0,1,7.44,2.17,12.91,12.91,0,0,1,5.67,10.65V77.78a1.78,1.78,0,0,1-1.78,1.78h0Z"
+            transform="translate(-4.37 -4.71)" />
+          <path class="cls-1"
+            d="M60.5,47.56A1.78,1.78,0,0,1,60.27,44l15.1-2L74.53,28.93A1.78,1.78,0,0,1,76.08,27l11.59-1.48-0.78-9.88a1.78,1.78,0,0,1,3.55-.28L91.36,27a1.78,1.78,0,0,1-1.55,1.91L78.19,30.37l0.84,13a1.78,1.78,0,0,1-1.54,1.88L60.74,47.54l-0.24,0"
+            transform="translate(-4.37 -4.71)" />
+          <path class="cls-1"
+            d="M97.48,8.27A3.56,3.56,0,1,0,101,11.84a3.57,3.57,0,0,0-3.56-3.56m0,10.69a7.13,7.13,0,1,1,7.13-7.13A7.14,7.14,0,0,1,97.48,19"
+            transform="translate(-4.37 -4.71)" />
+          <path class="cls-1"
+            d="M58,51h8.34a12.48,12.48,0,0,1,2.85.33l24.9-33.29a7.23,7.23,0,0,1-2.82-2.74Zm11.88,4.17a1.82,1.82,0,0,1-.57-0.09,9.25,9.25,0,0,0-3-.51H53.93a1.78,1.78,0,0,1-1.3-3l38.2-41a1.78,1.78,0,0,1,3.09,1.22,3.53,3.53,0,0,0,3.28,3.53,1.78,1.78,0,0,1,1.28,2.84L71.34,54.5a1.78,1.78,0,0,1-1.43.71h0Z"
+            transform="translate(-4.37 -4.71)" />
+          <g class="excavator-hook">
+            <path class="cls-1" d="M100.58,54.61H93.45a1.78,1.78,0,1,1,0-3.56h7.13a1.78,1.78,0,1,1,0,3.56"
+              transform="translate(-4.37 -4.71)" />
+            <path class="cls-1"
+              d="M97,70.65a7.14,7.14,0,0,1-7.13-7.13,1.78,1.78,0,0,1,3.56,0A3.56,3.56,0,1,0,97,60a1.78,1.78,0,0,1-1.78-1.78l0-41a1.78,1.78,0,0,1,1.78-1.78h0a1.78,1.78,0,0,1,1.78,1.78l0,39.48a7.13,7.13,0,0,1-1.78,14"
+              transform="translate(-4.37 -4.71)" />
+          </g>
+        </g>
+        <path class="cls-1" d="M113.67,112.29H6.33a1.73,1.73,0,1,1,0-3.42H113.67A1.73,1.73,0,1,1,113.67,112.29Z"
+          transform="translate(-4.37 -4.71)" />
+        <path class="cls-2 excavator-road"
+          d="M107.25,112.25h-7.17a1.71,1.71,0,1,1,0-3.42h7.17A1.71,1.71,0,1,1,107.25,112.25Z"
+          transform="translate(-4.37 -4.71)" />
+      </svg>
+    </div>
+  </div>
+  <!-- loader end  -->
+
+
+  <div class="decoration">
+    <div class="container">
+      <div class="decoration__line line"></div>
+      <div class="decoration__line line"></div>
+      <div class="decoration__line line"></div>
+      <div class="decoration__line line"></div>
+
+
+      <!-- ellipse -->
+      <div class="decoration__ellipse decoration__ellipse1 ellipse"></div>
+      <div class="decoration__ellipse decoration__ellipse2 ellipse"></div>
+      <div class="decoration__ellipse decoration__ellipse3 ellipse"></div>
+      <div class="decoration__ellipse decoration__ellipse4 ellipse"></div>
+      <div class="decoration__ellipse decoration__ellipse5 ellipse"></div>
+      <div class="decoration__ellipse decoration__ellipse6 ellipse"></div>
+      <!-- ellipse end -->
+    </div>
+  </div>
+
+
+  <div class="wrapper">
+    <div class="wrapper__content">
+      <header class="header">
+
+    <!-- header__top -->
+    <div class="header__top">
+      <div class="container">
+        <!-- logo -->
+        <div class="header__logo logo">
+          <a href="index.html" class="logo__link">
+            <img src="img/logo.png" alt="Мегапром технологии" class="logo__img" width="149" height="69">
+          </a>
+        </div>
+
+        <!-- symbol  -->
+        <div class="header__symbol symbol">
+          <img src="img/symbol.png" alt="Лучшее предприятие отрасли" class="symbol__img" width="50" height="50">
+        </div>
+
+        <!-- region -->
+        <div class="header__region region">
+          <span class="region__title js-region">
+            Екатеринбург
+          </span>
+          <button type="button" class="region__btn js-modal-regions-btn">Сменить регион</button>
+        </div>
+
+        <!-- socials -->
+        <ul class="header__socials socials">
+          <li class="socials__item">
+            <a href="https://vk.com/megapromtechnologies" target="_blank" class="socials__link"
+              title="ссылка на Вконтакте">
+              <img src="img/vk.svg" alt="иконка Вконтакте" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link" target="_blank" title="ссылка на Youtube канал">
+              <img src="img/youtube.svg" alt="иконка Youtube" class="socials__icon">
+            </a>
+          </li>
+        </ul>
+
+
+        <!-- email -->
+        <div class="header_email email">
+          <a href="mailto:office@intehstroi.ru" class="email__link">office@intehstroi.ru</a>
+          <span class="email__desc">онлайн 24/7</span>
+        </div>
+
+        <!-- phone  -->
+        <div class="header__phone phone">
+          <a href="tel:+74951111111" class="phone__link">+7 (495) 111-11-11</a>
+          <button class="phone__btn js-modal-call-btn">Получить обратный звонок</button>
+        </div>
+
+        <!-- toggle  -->
+        <div class="header__toggle toggle">
+          <span class="toggle__desc">Меню</span>
+          <button class="toggle__btn">
+            <span></span>
+          </button>
+        </div>
+        </div>
+        <!-- container end  -->
+    </div>
+    <!-- header__top end -->
+
+
+    <!-- header__bottom -->
+    <div class="header__bottom">
+      <div class="container">
+
+        <!-- menu -->
+        <nav class="header__menu main-menu">
+          <ul>
+            <li class="current_page_item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="page_item_has_children">
+              <a href="#">О компании</a>
+              <span class="caret"></span>
+              <ul class="children">
+                <li class="">
+                  <a href="company.html">Общая информация</a>
+                </li>
+                <li class="">
+                  <a href="history.html">История</a>
+                </li>
+                <li class="">
+                  <a href="regulations.html">Нормативные документы</a>
+                </li>
+                <li class="">
+                  <a href="reviews.html">Отзывы</a>
+                </li>
+              </ul>
+            </li>
+            <li class="page_item_has_children">
+              <a href="#">Услуги</a>
+              <span class="caret"></span>
+              <ul class="children">
+                <li class="">
+                  <a href="stroitelstvo-i-obsluzhivanie-neftegazovyh-obektov.html">Строительство и обслуживание нефтегазовых объектов</a>
+                  <!-- для каждого создать шаблон и дать класс для иконок -->
+                </li>
+                <li class="">
+                  <a href="servisnye-raboty-v-promyshlennom-i-grazhdanskom-stroitelstve.html">Сервисные работы в промышленном и гражданском строительстве</a>
+                </li>
+                <!-- <li class="">
+                  <a href="#">Земляные работы</a>
+                </li> -->
+                <li class="">
+                  <a href="stroitelstvo-i-obsluzhivanie-avtodorog.html">Строительство и обслуживание автодорог</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="projects.html">Проекты</a>
+            </li>
+            <li>
+              <a href="blog.html">Статьи</a>
+            </li>
+            <li class="menu__item">
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- menu end -->
+
+        <!-- search -->
+        <div class="header__search search">
+          <form action="#" class="search__form js-search-form">
+            <input type="search" class="search__input js-search-input" placeholder="Я ищу..." value="" name="search">
+            <button type="submit" class="search__submit js-search-button">Search</button>
+          </form>
+        </div>
+        <!-- search end -->
+
+        <!-- оставить заявку  -->
+        <button type="button" class="header__btn btn">Оставить заявку</button>
+        <!-- оставить заявку end -->
+
+
+        <ul class="header__additional">
+          <li class="header__additional-item">
+            <!-- phone mobile  -->
+            <div class="header__phone--mobile phone">
+              <a href="tel:+74951111111" class="phone__link">+7 (495) 111-11-11</a>
+              <button class="phone__btn js-modal-call-btn">Получить обратный звонок</button>
+            </div>
+            <!-- phone mobile end  -->
+          </li>
+          <li class="header__additional-item">
+            <!-- email mobile  -->
+            <div class="header_email--mobile email">
+              <a href="mailto:office@intehstroi.ru" class="email__link">office@intehstroi.ru</a>
+              <span class="email__desc">онлайн 24/7</span>
+            </div>
+            <!-- email mobile end  -->
+          </li>
+          <li class="header__additional-item">
+            <!-- socials -->
+            <ul class="header__socials--mobile socials">
+              <li class="socials__item">
+                <a href="https://vk.com/megapromtechnologies" target="_blank" class="socials__link"
+                  title="ссылка на Вконтакте">
+                  <img src="img/vk.svg" alt="иконка Вконтакте" class="socials__icon">
+                </a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link" target="_blank" title="ссылка на Youtube канал">
+                  <img src="img/youtube.svg" alt="иконка Youtube" class="socials__icon">
+                </a>
+              </li>
+            </ul>
+            <!-- socials end -->
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <!-- header__bottom end -->
+
+
+</header>
+
+
+
+
+      <main>
+        <section class="services">
+  <div class="container">
+    <h3 class="title services__title">
+      Услуги компании
+    </h3>
+
+    <ul class="services__list">
+      <li class="services__item">
+        <a href="stroitelstvo-i-obsluzhivanie-neftegazovyh-obektov.html" class="services__link">
+          Строительство и обслуживание нефтегазовых объектов
+        </a>
+      </li>
+      <li class="services__item">
+        <a href="servisnye-raboty-v-promyshlennom-i-grazhdanskom-stroitelstve.html" class="services__link">
+          Сервисные работы в промышленном и гражданском строительстве
+        </a>
+      </li>
+      <li class="services__item active">
+        <a href="stroitelstvo-i-obsluzhivanie-avtodorog.html" class="services__link">
+          Строительство и обслуживание автодорог
+        </a>
+      </li>
+    </ul>
+
+    <ul class="service__type type">
+      <li class="type__item type__item--sign">
+          <div class="type__title">Строительство автомобильных дорог
+          </div>
+          <div class="type__text">
+            Комплекс услуг по строительству автомобильных дорог с различными видами покрытия
+          </div>
+          <a href="#" class="type__link">Подробнее</a>
+      </li>
+
+      <li class="type__item type__item--serv">
+        <div class="type__title">Обслуживание автомобильных дорог<br>и придорожной инфраструктуры
+        </div>
+        <div class="type__text">
+          Полный комплекс работ по обслуживанию автомобильных дорог
+        </div>
+        <a href="#" class="type__link">Подробнее</a>
+      </li>
+
+      <li class="type__item type__item--construction">
+        <div class="type__title">Услуги дорожно строительной, грузовой и строительной техники
+        </div>
+        <div class="type__text">
+          Комплекс услуг по аренде дорожностроительной техники
+        </div>
+        <a href="#" class="type__link">Подробнее</a>
+      </li>
+
+
+
+
+    </ul>
+
+    <div class="services__btns">
+      <button class="btn services__btn js-modal-call-btn">Заказать звонок</button>
+      <a href="#" class="btn btn--bordered services__btn" download>Скачать прайс-лист</a>
+    </div>
+
+
+  </div>
+</section>
+
+      </main>
+    </div>
+
+    <footer class="footer">
+  <div class="container">
+
+    <!-- footer row 1 -->
+    <div class="footer__row footer__row-1">
+
+      <!-- logo -->
+      <div class="footer__logo footer__logo-1 logo">
+        <a href="index.html" class="logo__link">
+          <img src="img/logo.png" alt="Мегапром технологии" class="logo__img" width="149" height="69">
+        </a>
+      </div>
+      <!-- logo end  -->
+
+      <!-- buklet  -->
+      <a href="https://docs.google.com/presentation/d/1tLmh8_XKfu1GTw45sg0ogacbnR8jHlOB/edit?usp=sharing&amp;ouid=108861401704902376479&amp;rtpof=true&amp;sd=true"
+        target="blank" class="footer__link footer__link-2 buklet-link buklet-link--black">Буклет компании</a>
+
+      <!-- symbol  -->
+      <div class="footer__best">
+
+
+        <div class="footer__best-symbol symbol">
+          <img src="img/symbol.png" alt="Лучшее предприятие отрасли" class="symbol__img" width="50" height="50">
+        </div>
+        <div class="footer__best-text">
+          ООО «МЕГАПРОМГРУПП-ТЕХНОЛОГИИ»<br>«Лучшее предприятие отрасли» 2020 года
+        </div>
+      </div>
+      <!-- symbol end  -->
+
+
+      <!-- search -->
+      <div class="footer__search search">
+        <form action="#" class="search__form js-search-form">
+          <input type="search" class="search__input js-search-input" placeholder="Я ищу..." value="" name="search">
+          <button type="submit" class="search__submit js-search-button">Search</button>
+        </form>
+      </div>
+      <!-- search end -->
+
+    </div>
+    <!-- footer row 1 end-->
+
+    <!-- footer row 2 -->
+    <div class="footer__row footer__row-2">
+
+      <!-- footer__col  -->
+      <div class="footer__col">
+        <div class="footer__subtitle">Информация</div>
+
+        <nav class="footer__menu footer-menu-1">
+          <ul>
+            <li class="current_page_item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li>
+              <a href="projects.html">Проекты</a>
+            </li>
+            <li>
+              <a href="blog.html">Статьи</a>
+            </li>
+            <li>
+              <a href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+         <!-- оставить заявку  -->
+         <button type="button" class="footer__btn footer__btn-1 btn js-modal-calculation-btn">Оставить заявку</button>
+         <!-- оставить заявку end -->
+
+
+      </div>
+      <!-- footer__col end -->
+
+      <!-- footer__col  -->
+      <div class="footer__col">
+        <div class="footer__subtitle">О компании</div>
+
+        <nav class="footer__menu footer-menu-2">
+          <ul>
+            <li class="current_page_item">
+              <a href="company.html">Общая информация</a>
+            </li>
+            <li>
+              <a href="projects.html">Наши проекты</a>
+            </li>
+            <li>
+              <a href="reviews.html">Отзывы заказчиков</a>
+            </li>
+            <li>
+              <a href="regulations.html">Документация</a>
+            </li>
+          </ul>
+        </nav>
+
+       <!-- buklet  -->
+       <a href="https://docs.google.com/presentation/d/1tLmh8_XKfu1GTw45sg0ogacbnR8jHlOB/edit?usp=sharing&amp;ouid=108861401704902376479&amp;rtpof=true&amp;sd=true"
+         target="blank" class="footer__link footer__link-1 buklet-link buklet-link--black">Буклет компании</a>
+
+      </div>
+      <!-- footer__col end -->
+
+      <!-- footer__col  -->
+      <div class="footer__col">
+        <div class="footer__subtitle">Услуги</div>
+
+        <nav class="footer__menu footer-menu-2">
+          <ul>
+            <li class="current_page_item">
+              <a href="stroitelstvo-i-obsluzhivanie-neftegazovyh-obektov.html">Строительство и обслуживание нефтегазовых
+                объектов</a>
+            </li>
+            <li>
+              <a href="servisnye-raboty-v-promyshlennom-i-grazhdanskom-stroitelstve.html">Сервисные работы в
+                промышленном и гражданском строительстве</a>
+            </li>
+            <li>
+              <a href="stroitelstvo-i-obsluzhivanie-avtodorog.html">Строительство и обслуживание автодорог</a>
+            </li>
+            <!-- <li >
+              <a href="#">Грунтовые работы</a>
+            </li> -->
+
+
+          </ul>
+        </nav>
+
+
+      </div>
+      <!-- footer__col end -->
+
+      <!-- footer__col  -->
+      <div class="footer__col">
+        <div class="footer__subtitle">Контакты</div>
+
+        <!-- phone  -->
+        <div class="footer__phone phone">
+          <a href="tel:+74951111111" class="phone__link">+7 (495) 111-11-11</a>
+          <button class="phone__btn phone__btn-1 js-modal-call-btn">Получить обратный звонок</button>
+          <button class="phone__btn phone__btn-2">Заказать звонок</button>
+        </div>
+
+        <!-- email -->
+        <div class="footer__email email">
+          <a href="mailto:office@intehstroi.ru" class="email__link">office@intehstroi.ru</a>
+          <span class="email__desc">онлайн 24/7</span>
+        </div>
+
+        <!-- socials  -->
+        <ul class="footer__socials socials">
+          <li class="socials__item">
+            <a href="https://vk.com/megapromtechnologies" target="_blank" class="socials__link"
+              title="ссылка на Вконтакте">
+              <img src="img/vk.svg" alt="иконка Вконтакте" class="socials__icon">
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link" target="_blank" title="ссылка на Youtube канал">
+              <img src="img/youtube.svg" alt="иконка Youtube" class="socials__icon">
+            </a>
+          </li>
+        </ul>
+
+
+
+      </div>
+      <!-- footer__col end -->
+
+
+    </div>
+    <!-- footer row 2 end-->
+
+    <!-- footer row 3 -->
+    <div class="footer__row footer__row-3">
+      <a href="#" class="footer__politics-link">Политика защиты и обработки персональных данных</a>
+    </div>
+    <!-- footer row 3 end  -->
+
+    <div class="footer__row footer__row-4">
+
+      <!-- logo  -->
+      <div class="footer__logo footer__logo-2 logo">
+        <a href="index.html" class="logo__link">
+          <img src="img/logo.png" alt="Мегапром технологии" class="logo__img" width="149" height="69">
+        </a>
+      </div>
+
+         <!-- оставить заявку  -->
+         <button type="button" class="footer__btn footer__btn-2 btn js-modal-calculation-btn">Оставить заявку</button>
+         <!-- оставить заявку end -->
+    </div>
+
+  </div>
+
+  <div class="modal" id="js-modal-call">
+
+    <div class="modal__content">
+      <button type="button" class="modal__close">
+        <img src="img/close-icon.svg" alt="close button">
+      </button>
+
+      <div class="modal__info">
+        <h5 class="modal__title">Оставьте ваши данные</h5>
+        <div class="modal__text">
+          и в течение 15 минут вам перезвонит наш менеджер для уточнения любых вопросов и составления сметы
+        </div>
+
+        <div class="modal__form form">
+          <form action="#" class="form__elem">
+            <div class="form__row">
+              <input type="text" class="form__input" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="form__row">
+              <input type="phone" class="form__input" name="phone" placeholder="Номер телефона">
+              <input type="hidden" name="type" value="call">
+            </div>
+            <div class="form__row">
+              <button type="submit" class="btn form__btn">Заказать звонок</button>
+            </div>
+            <div class="form__row">
+              <div class="form__error"></div>
+            </div>
+            <div class="form__row">
+              <div class="form__politics">
+                Нажимая на кнопку вы соглашаетесь с <a href="#" class="form__politics-link">условиями
+                  обработки данных и
+                  политикой конфиденциальности</a>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="modal" id="js-modal-calculation">
+
+    <div class="modal__content">
+      <button type="button" class="modal__close">
+        <img src="img/close-icon.svg" alt="close button">
+      </button>
+
+      <div class="modal__info">
+        <h5 class="modal__title">Оставьте ваши данные</h5>
+        <div class="modal__text">
+          и мы свяжемся с вами для бесплатного расчета сметы проекта
+        </div>
+
+        <div class="modal__form form">
+          <form action="#" class="form__elem">
+            <div class="form__row">
+              <input type="text" class="form__input" name="name" placeholder="Ваше имя">
+            </div>
+            <div class="form__row">
+              <input type="phone" class="form__input" name="phone" placeholder="Номер телефона">
+            </div>
+            <div class="form__row">
+              <input type="text" class="form__input" name="comment" placeholder="Комментарий">
+            </div>
+            <div class="form__row">
+              <label class="form__file btn btn--bordered">
+                <input type="file" name="file">Прикрепить файл
+                <input type="hidden" name="type" value="calculation">
+              </label>
+            </div>
+            <div class="form__row">
+              <button type="submit" class="btn form__btn">Заказать звонок</button>
+            </div>
+            <div class="form__row">
+              <div class="form__error"></div>
+            </div>
+            <div class="form__row">
+              <div class="form__politics">
+                Нажимая на кнопку вы соглашаетесь с <a href="#" class="form__politics-link">условиями
+                  обработки данных и
+                  политикой конфиденциальности</a>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="modal" id="js-modal-success">
+
+    <div class="modal__content">
+      <button type="button" class="modal__close">
+        <img src="img/close-icon.svg" alt="close button">
+      </button>
+
+      <div class="modal__info">
+        <h5 class="modal__title">Ваша заявка успешно отправлена</h5>
+
+
+      </div>
+
+
+    </div>
+  </div>
+  <div class="modal" id="js-modal-regions">
+
+    <div class="modal__content">
+      <button type="button" class="modal__close">
+        <img src="img/close-icon.svg" alt="close button">
+      </button>
+
+      <div class="modal__info">
+        <h5 class="modal__title">Выберите город</h5>
+
+        <div class="modal__custom-select custom-select js-regions-custom-select">
+          <!--  -->
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="modal js-modal-search" id="js-modal-search">
+
+    <div class="modal__content">
+      <button type="button" class="modal__close">
+        <img src="img/close-icon.svg" alt="close button">
+      </button>
+
+      <div class="modal__info">
+        <h3 class="modal__title">Поиск на сайте</h3>
+
+        <div class="modal__search search">
+          <form action="#" class="search__form js-search-form-modal">
+            <input type="search" class="search__input js-search-input-modal" placeholder="Я ищу..." value=""
+              name="search">
+            <button type="submit" class="search__submit js-search-button-modal">Search</button>
+          </form>
+        </div>
+
+        <div class="modal__result js-search-result">
+
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<script>
+  TweenMax.to(".excavator-body", 0.1, {
+    y: "+=1",
+    yoyo: true,
+    repeat: -1
+  });
+  TweenMax.to(".excavator-body", 0.1, {
+    y: "-=1",
+    yoyo: true,
+    repeat: -1
+  });
+  TweenMax.to(".excavator-road", 0, {
+    x: 145
+  });
+  TweenMax.to(".excavator-road", 3, {
+    x: -145,
+    repeat: -1
+  });
+  TweenMax.to(".excavator-hook", 0, {
+    rotation: -10,
+    transformOrigin: "50% 0%"
+  });
+  TweenMax.to(".excavator-hook", 1, {
+    rotation: 10,
+    transformOrigin: "50% 0%",
+    repeat: -1,
+    yoyo: true,
+    ease: Sine.easeInOut
+  });
+</script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/lightgallery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/fullscreen/lg-fullscreen.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.5.0/plugins/zoom/lg-zoom.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+
+
+</body>
+
+</html>
