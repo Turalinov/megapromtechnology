@@ -3168,7 +3168,7 @@ button:focus {
 }
 @media screen and (max-width: 768px) {
   .footer__search {
-    max-width: 280px;
+    max-width: 320px;
   }
 }
 
@@ -4291,6 +4291,7 @@ button:focus {
 }
 @media screen and (max-width: 768px) {
   .header__search {
+    max-width: 290px;
     width: 100%;
     display: block;
     margin-bottom: 20px;
@@ -4839,6 +4840,42 @@ button:focus {
     position: relative;
     padding-right: 15px;
   }
+}
+
+.page_item_has_children:nth-child(3) > ul li > a {
+  padding-left: 45px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .page_item_has_children:nth-child(3) > ul li > a {
+    padding-left: 25px;
+  }
+}
+.page_item_has_children:nth-child(3) > ul li > a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon-service-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .page_item_has_children:nth-child(3) > ul li > a::before {
+    display: none;
+  }
+}
+
+.page_item_has_children:nth-child(3) > ul li:nth-child(2) > a::before {
+  background-image: url("../img/icon-service-2.svg");
+}
+
+.page_item_has_children:nth-child(3) > ul li:nth-child(3) > a::before {
+  background-image: url("../img/icon-service-3.svg");
 }
 
 .main-menu ul ul {
@@ -5997,6 +6034,7 @@ button:focus {
 }
 
 .hero__title {
+  text-transform: uppercase;
   margin-bottom: 20px;
   letter-spacing: 2px;
 }
