@@ -8091,6 +8091,10 @@ button:focus {
   background-image: url(../img/icon-engineering.svg);
 }
 
+.card--reclamation .card__subtitle::after {
+  background-image: url(../img/icon-reclamation.svg);
+}
+
 @media screen and (max-width: 992px) {
   .card__content {
     display: flex;
