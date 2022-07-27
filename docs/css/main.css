@@ -1253,130 +1253,6 @@ button:focus {
   }
 }
 
-.card {
-  font-size: 25px;
-}
-@media screen and (max-width: 992px) {
-  .card {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .card {
-    font-size: 14px;
-  }
-}
-
-.card__title {
-  margin-bottom: 20px;
-}
-@media screen and (max-width: 768px) {
-  .card__title {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-}
-
-.card__subtitle {
-  display: inline-block;
-  margin-bottom: 20px;
-  max-width: 600px;
-  padding-left: 70px;
-  position: relative;
-}
-@media screen and (max-width: 768px) {
-  .card__subtitle {
-    padding-top: 40px;
-    padding-left: 0;
-    margin-bottom: 10px;
-  }
-}
-.card__subtitle::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 0;
-  left: 0;
-  background-image: url(../img/icon-roads.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-@media screen and (max-width: 768px) {
-  .card__subtitle::after {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.card--roads .card__subtitle::after {
-  background-image: url(../img/icon-roads.svg);
-}
-
-@media screen and (max-width: 992px) {
-  .card__content {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-.card__content::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.card__img {
-  float: right;
-  max-width: 450px;
-  height: 284px;
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  display: table;
-}
-@media screen and (max-width: 992px) {
-  .card__img {
-    float: initial;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 768px) {
-  .card__img {
-    max-width: 280px;
-    height: 176px;
-  }
-}
-
-.card__img-elem {
-  width: 100%;
-  object-fit: cover;
-}
-
-.card__img-caption {
-  font-family: "Inter", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 16px;
-  margin-top: 10px;
-}
-@media screen and (max-width: 768px) {
-  .card__img-caption {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .card__text {
-    margin-bottom: 20px;
-  }
-}
-
-.card__text > p + p {
-  margin-top: 20px;
-}
-
 .certificate__wrap {
   display: flex;
 }
@@ -7427,59 +7303,6 @@ button:focus {
   }
 }
 
-.price {
-  display: flex;
-  flex-direction: column;
-}
-
-.price__title {
-  margin-bottom: 35px;
-}
-@media screen and (max-width: 768px) {
-  .price__title {
-    text-align: center;
-    margin-bottom: 25px;
-  }
-}
-
-.price__table {
-  margin-bottom: 40px;
-}
-@media screen and (max-width: 992px) {
-  .price__table {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .price__table {
-    margin-bottom: 10px;
-  }
-}
-
-.price__desc {
-  margin-bottom: 40px;
-}
-@media screen and (max-width: 992px) {
-  .price__desc {
-    margin-bottom: 30px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .price__desc {
-    margin-bottom: 25px;
-  }
-}
-
-.price__link {
-  color: var(--clr-orange);
-  align-self: center;
-}
-@media screen and (max-width: 768px) {
-  .price__link {
-    max-width: 320px;
-  }
-}
-
 .projects__accordion.accordion {
   border: 1px solid red;
 }
@@ -8197,6 +8020,187 @@ button:focus {
   background-size: contain;
   background-position: center;
   text-indent: -9999px;
+}
+
+.card {
+  font-size: 25px;
+}
+@media screen and (max-width: 992px) {
+  .card {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    font-size: 14px;
+  }
+}
+
+.card__title {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .card__title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+.card__subtitle {
+  display: inline-block;
+  margin-bottom: 20px;
+  max-width: 600px;
+  padding-left: 70px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .card__subtitle {
+    padding-top: 40px;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+}
+.card__subtitle::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/icon-roads.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .card__subtitle::after {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.card--roads .card__subtitle::after {
+  background-image: url(../img/icon-roads.svg);
+}
+
+.card--oil .card__subtitle::after {
+  background-image: url(../img/icon-oil.svg);
+}
+
+@media screen and (max-width: 992px) {
+  .card__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.card__content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.card__img {
+  float: right;
+  max-width: 450px;
+  height: 284px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: table;
+}
+@media screen and (max-width: 992px) {
+  .card__img {
+    float: initial;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__img {
+    max-width: 280px;
+    height: 176px;
+  }
+}
+
+.card__img-elem {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__img-caption {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .card__img-caption {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card__text {
+    margin-bottom: 20px;
+  }
+}
+
+.card__text > p + p {
+  margin-top: 20px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price__title {
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 768px) {
+  .price__title {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+.price__table {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 992px) {
+  .price__table {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .price__table {
+    margin-bottom: 10px;
+  }
+}
+
+.price__desc {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 992px) {
+  .price__desc {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .price__desc {
+    margin-bottom: 25px;
+  }
+}
+
+.price__link {
+  color: var(--clr-orange);
+  align-self: center;
+}
+@media screen and (max-width: 768px) {
+  .price__link {
+    max-width: 320px;
+  }
 }
 
 .services {
