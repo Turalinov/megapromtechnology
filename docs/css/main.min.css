@@ -318,6 +318,7 @@ template {
   --clr-grey: #A0A0A0;
   --clr-grey-1: #6C6C6C;
   --clr-grey-2: #252931;
+  --clr-grey-3: #474746;
   --clr-blue: #1273AC;
   --clr-blue2: #69B7E6;
   --clr-blue3: #0066FF;
@@ -379,7 +380,7 @@ ul > li {
 }
 
 input:not([type=checkbox]):not([type=radio]),
-select {
+select, textarea {
   outline: none;
   width: 100%;
   background: var(--clr-white);
@@ -393,16 +394,16 @@ select {
 }
 @media screen and (max-width: 768px) {
   input:not([type=checkbox]):not([type=radio]),
-select {
+select, textarea {
     font-size: 12px;
   }
 }
 input:not([type=checkbox]):not([type=radio]):focus,
-select:focus {
+select:focus, textarea:focus {
   border: 1px solid var(--clr-main);
 }
 input:not([type=checkbox]):not([type=radio])::placeholder,
-select::placeholder {
+select::placeholder, textarea::placeholder {
   color: var(--clr-placeholder-search);
 }
 
@@ -1250,6 +1251,130 @@ button:focus {
   .cabinet {
     padding: 68px 0 25px;
   }
+}
+
+.card {
+  font-size: 25px;
+}
+@media screen and (max-width: 992px) {
+  .card {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    font-size: 14px;
+  }
+}
+
+.card__title {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .card__title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+.card__subtitle {
+  display: inline-block;
+  margin-bottom: 20px;
+  max-width: 600px;
+  padding-left: 70px;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .card__subtitle {
+    padding-top: 40px;
+    padding-left: 0;
+    margin-bottom: 10px;
+  }
+}
+.card__subtitle::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  background-image: url(../img/icon-roads.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .card__subtitle::after {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.card--roads .card__subtitle::after {
+  background-image: url(../img/icon-roads.svg);
+}
+
+@media screen and (max-width: 992px) {
+  .card__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.card__content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.card__img {
+  float: right;
+  max-width: 450px;
+  height: 284px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: table;
+}
+@media screen and (max-width: 992px) {
+  .card__img {
+    float: initial;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card__img {
+    max-width: 280px;
+    height: 176px;
+  }
+}
+
+.card__img-elem {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__img-caption {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+  .card__img-caption {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card__text {
+    margin-bottom: 20px;
+  }
+}
+
+.card__text > p + p {
+  margin-top: 20px;
 }
 
 .certificate__wrap {
@@ -3440,6 +3565,12 @@ button:focus {
 .form__input {
   position: relative;
   cursor: pointer;
+  width: 100%;
+}
+
+.form__input--textarea {
+  resize: vertical;
+  height: 100px;
 }
 
 .form__politics {
@@ -7281,6 +7412,59 @@ button:focus {
   }
 }
 
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.price__title {
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 768px) {
+  .price__title {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+}
+
+.price__table {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 992px) {
+  .price__table {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .price__table {
+    margin-bottom: 10px;
+  }
+}
+
+.price__desc {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 992px) {
+  .price__desc {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .price__desc {
+    margin-bottom: 25px;
+  }
+}
+
+.price__link {
+  color: var(--clr-orange);
+  align-self: center;
+}
+@media screen and (max-width: 768px) {
+  .price__link {
+    max-width: 320px;
+  }
+}
+
 .projects__accordion.accordion {
   border: 1px solid red;
 }
@@ -8131,6 +8315,84 @@ button:focus {
   color: var(--clr-orange);
 }
 
+.services__card {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 992px) {
+  .services__card {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services__card {
+    margin-bottom: 20px;
+  }
+}
+
+.services__price {
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 992px) {
+  .services__price {
+    margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .services__price {
+    margin-bottom: 70px;
+  }
+}
+
+.service__form {
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .service__form {
+    padding-bottom: 40px;
+  }
+}
+
+.service__form .form__elem {
+  max-width: 842px;
+}
+
+.service__form .form__title {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+.service__form .form__title span {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.service__form .form__row {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .service__form .form__row {
+    flex-direction: column;
+  }
+}
+
+.service__form input:not([type=checkbox]):not([type=radio]), .service__form textarea {
+  border: 1px solid rgba(183, 183, 183, 0.5);
+}
+
+.service__form .form__block > .btn {
+  width: 100%;
+}
+
+.service__form .form__block > .btn.btn--bordered {
+  background-color: var(--clr-grey-3);
+  color: var(--clr-white);
+  border: 1px solid transparent;
+}
+
+.service__form .form__block > .form__politics {
+  color: var(--clr-black);
+}
+
 .type {
   display: flex;
   flex-wrap: wrap;
@@ -8369,6 +8631,58 @@ button:focus {
     width: 40px;
     height: 40px;
   }
+}
+
+.table {
+  overflow-x: auto;
+}
+
+table.table-1 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+table.table-1 tr {
+  border-radius: 3px;
+  border: 1px solid var(--clr-white);
+}
+
+table.table-1 tr:nth-child(odd) {
+  background: rgba(18, 115, 172, 0.05);
+}
+
+table.table-1 tr:first-child {
+  background: rgba(18, 115, 172, 0.15);
+}
+
+table.table-1 th, table.table-1 td {
+  padding: 25px 20px;
+}
+@media screen and (max-width: 768px) {
+  table.table-1 th, table.table-1 td {
+    padding: 5px 10px;
+  }
+}
+
+table.table-1 th {
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid var(--clr-white);
+}
+
+table.table-1 th:nth-child(1) {
+  width: 50%;
+}
+
+table.table-1 td {
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+
+table.table-1 td:not(:first-child) {
+  text-align: center;
 }
 
 .tabs__header {
