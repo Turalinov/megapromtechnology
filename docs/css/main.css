@@ -3592,6 +3592,21 @@ button:focus {
 
 .form__error {
   color: #ff6363;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .form__error {
+    font-size: 12px;
+  }
+}
+
+.form__file-info {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .form__file-info {
+    font-size: 12px;
+  }
 }
 
 .geography.geography--inner {
