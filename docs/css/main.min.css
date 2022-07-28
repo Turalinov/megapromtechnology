@@ -8099,6 +8099,22 @@ button:focus {
   background-image: url(../img/icon-service.svg);
 }
 
+.card--court .card__subtitle::after {
+  background-image: url(../img/icon-court.svg);
+}
+
+.card--engineering-1 .card__subtitle::after {
+  background-image: url(../img/icon-engineering-1.svg);
+}
+
+.card--reclamation-1 .card__subtitle::after {
+  background-image: url(../img/icon-reclamation-1.svg);
+}
+
+.card--territories .card__subtitle::after {
+  background-image: url(../img/icon-territories.svg);
+}
+
 @media screen and (max-width: 992px) {
   .card__content {
     display: flex;
@@ -8170,11 +8186,13 @@ button:focus {
 .card__text ul {
   margin-top: 20px;
   margin-left: 50px;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 768px) {
   .card__text ul {
     margin-left: 30px;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
