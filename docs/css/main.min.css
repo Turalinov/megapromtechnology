@@ -8115,6 +8115,18 @@ button:focus {
   background-image: url(../img/icon-territories.svg);
 }
 
+.card--sign .card__subtitle::after {
+  background-image: url(../img/icon-sign.svg);
+}
+
+.card--serv .card__subtitle::after {
+  background-image: url(../img/icon-serv.svg);
+}
+
+.card--construction .card__subtitle::after {
+  background-image: url(../img/icon-construction.svg);
+}
+
 @media screen and (max-width: 992px) {
   .card__content {
     display: flex;
