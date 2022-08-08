@@ -4157,6 +4157,10 @@ button:focus {
   display: block;
 }
 
+.geography__elem--branch {
+  display: none;
+}
+
 .header-cabinet {
   position: fixed;
   left: 0;
